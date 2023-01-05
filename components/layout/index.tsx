@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import { IFooterProps, Footer } from '../footer/index';
 import { INavBarProps, NavBar } from '../navbar/index';
 import styles from "./styles.module.scss"
@@ -13,6 +13,7 @@ export const Layout: FC<ILayoutProps & { children: JSX.Element }> = ({
   footerData,
   children,
 }) => {
+
   return (
     <div className={styles.layout}>
         <NavBar {...navbarData} />

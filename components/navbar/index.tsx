@@ -1,16 +1,38 @@
 import { FC } from 'react';
 import styles from "./styles.module.scss"
 import Image from 'next/image';
-import logoLight from "@/public/logo_light.png"
+import logoLight from "@/public/logo.png"
 
-export interface INavBarProps {}
+const NAV_LIST = [
+  {
+    title: 'speaker'
+  },{
+    title: 'Sponsors'
+  },{
+    title: 'Agenda'
+  },{
+    title: 'Vote'
+  },{
+    title: 'Speaksers'
+  },
+]
 
-export const NavBar: FC<INavBarProps> = ({}) => {
+export const NavBar: FC = ({}) => {
   return (
     <div className={styles.navBar}>
-      <a href="http://localhost:3000/">
-        <Image src={logoLight} alt="Demo" width={70} height={20} />
-      </a>
+      <Image src={logoLight} alt="logo" width={69} height={54} />
+      <ul className={styles.navUl}>
+        {
+          NAV_LIST.map((item, index) => {
+            return <li key={index} className={styles.navLi}>
+              {item.title}
+            </li>
+          })
+        }
+      </ul>
+      <div className={styles.ticketButton}>
+        TICKETING
+      </div>
     </div>
   )
 }

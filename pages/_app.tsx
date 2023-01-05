@@ -3,17 +3,32 @@ import App from "next/app";
 import { Layout, ILayoutProps } from "@/components/layout";
 import code from "@/public/code.png";
 import Head from 'next/head';
+import { useEffect } from "react";
 
 const MyApp = (data: AppProps & ILayoutProps) => {
   const { Component, pageProps, navbarData, footerData } = data;
-  console.log(Component)
+
+  useEffect(() => {
+    import("amfe-flexible")
+  }, [])
+
   return (
     <div>
+      <style global jsx>
+        {`
+          body {
+            margin: 0;
+            padding: 0;
+          }
+        `}
+      </style>
       <Head>
-        <title>A Demo for 《深入浅出SSR官网开发指南》</title>
+        <title>nyc-blockchain-conference-website</title>
         <meta name='description' 
-          content='A Demo for 《深入浅出SSR官网开发指南》'
+          content='nyc-blockchain-conference-website'
         />
+        <meta name="renderer" content="webkit" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"></meta>
       </Head>
       <Layout navbarData={navbarData} footerData={footerData}>
         <Component {...pageProps} />
