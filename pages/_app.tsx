@@ -1,4 +1,3 @@
-import "../styles/globals.css";
 import type { AppProps, AppContext } from "next/app";
 import App from "next/app";
 import { Layout, ILayoutProps } from "@/components/layout";
@@ -7,7 +6,7 @@ import Head from 'next/head';
 
 const MyApp = (data: AppProps & ILayoutProps) => {
   const { Component, pageProps, navbarData, footerData } = data;
-
+  console.log(Component)
   return (
     <div>
       <Head>
@@ -25,7 +24,6 @@ const MyApp = (data: AppProps & ILayoutProps) => {
 
 MyApp.getInitialProps = async (context: AppContext) => {
   const pageProps = await App.getInitialProps(context);
-
   return {
     ...pageProps,
     navbarData: {},

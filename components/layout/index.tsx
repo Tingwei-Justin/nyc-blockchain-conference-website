@@ -9,16 +9,15 @@ export interface ILayoutProps {
 }
 
 export const Layout: FC<ILayoutProps & { children: JSX.Element }> = ({
-    navbarData,
-    footerData,
-    children,
-
+  navbarData,
+  footerData,
+  children,
 }) => {
-    return (
-        <div className={styles.layout}>
-            <NavBar {...navbarData} />
-            <main className={styles.main}>{children}</main>
-            <Footer {...footerData} />
-        </div>    
-    )
+  return (
+    <div className={styles.layout}>
+        <NavBar {...navbarData} />
+        <main className={styles.main}>{children}</main>
+        <Footer {...footerData} />
+    </div>    
+  )
 }
