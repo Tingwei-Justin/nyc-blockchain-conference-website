@@ -47,12 +47,20 @@
       font-size: 60px;
       color: #FFFFFF;
       display: flex;
+      .clockimg{
+        width: 77px;
+        height: 77px;
+      }
       .meetInfoContent {
         display: flex;
         flex-direction: column;
         margin-left: 19px;
         .infoAddress {
           font-size: 40px;
+          .logoimg{
+            width: 35px;
+            height: 35px;
+          }
         }
       }
     }

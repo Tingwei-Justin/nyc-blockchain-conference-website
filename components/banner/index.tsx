@@ -11,14 +11,14 @@ const Banner: FC = ({}) => {
         <div className={styles.meetingCome}/>
         <div className={styles.bannerBackground}/>
         <div className={styles.meetingInfo}>
-          <Image src={clock} alt="logo" width={77} height={77} />
+          <Image className={styles.clockimg} src={clock} alt="logo"  />
           <div className={styles.meetInfoContent}>
             <div className={styles.infoDate}>
               Date : MAY   26-28 • NYC
             </div>
             <div className={styles.infoAddress}>
               {'ADDRESS '}
-              <Image src={address} alt="logo" width={35} height={35} />
+              <Image className={styles.logoimg} src={address} alt="logo" width={35} height={35} />
               {' XXXXX-XXXX-XXXX'}
             </div>
           </div>
