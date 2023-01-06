@@ -1,0 +1,45 @@
+.liangdianContent {
+  width: 1516px;
+  margin: 0 auto;
+  margin-top: 60px;
+  .title {
+    width: 436px;
+    height: 85px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    color: #0E00FF;
+  }
+  .titleLine { 
+    width: 1516px;
+    height: 39px;
+    background: #191A1E;
+  }
+  .titleTip {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #FFFFFF;
+    margin-left: 53px;
+    margin-top: 13px;
+  }
+  .liangdianInfo {
+    margin-left: 79px;
+  }
+  .liangdianInfoItems {
+    display: flex;
+    .liangdianItemsItem {
+      display: flex;
+      flex-direction: column;
+      .liangdianItem {
+        display: flex;
+        .itemIndex {
+          
+        }
+      }
+    }
+  }
+}

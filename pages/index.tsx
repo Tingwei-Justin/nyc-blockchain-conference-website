@@ -1,10 +1,13 @@
 import type { NextPage } from "next";
 import styles from "./index.module.scss";
+import Banner from '../components/banner'
+import Liangdian from '../components/Liangdian'
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      hello word!
+      <Banner></Banner>
+      <Liangdian></Liangdian>
     </div>
   );
 };
