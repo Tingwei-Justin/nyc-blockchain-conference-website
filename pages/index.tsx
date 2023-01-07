@@ -5,7 +5,7 @@ import Liangdian from '../components/liangdian'
 import Agenda from '../components/agenda'
 import Ticketing from '../components/ticketing'
 import Vote from '../components/vote'
-import Sponsor from "../components/sponsor";
+import Speaker from "../components/speaker";
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       <Agenda></Agenda>
       <Ticketing></Ticketing>
       <Vote></Vote>
-      <Sponsor></Sponsor>
+      <Speaker></Speaker>
     </div>
   );
 };

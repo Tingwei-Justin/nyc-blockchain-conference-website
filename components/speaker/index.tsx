@@ -41,7 +41,7 @@ const ALLSPEAKERS=[
         postion:"NYCfounder CEO"
     }
 ]
-const Sponsor: FC =({}) => {
+const Speaker: FC =({}) => {
     return(
         <div className={styles.sponsor}>
                 <div className={styles.title}>SPEAKER
@@ -64,4 +64,4 @@ const Sponsor: FC =({}) => {
         </div>
     )
 }
-export default Sponsor;
+export default Speaker;
