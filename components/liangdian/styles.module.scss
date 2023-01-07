@@ -28,17 +28,83 @@
   }
   .liangdianInfo {
     margin-left: 79px;
-  }
-  .liangdianInfoItems {
+    margin-top: 45px;
     display: flex;
-    .liangdianItemsItem {
+    flex-direction: column;
+    .liangdianInfoItems {
       display: flex;
-      flex-direction: column;
-      .liangdianItem {
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 25px;
+      color: #FFFFFF;
+      .liangdianItemsItem {
         display: flex;
-        .itemIndex {
-          
+        .liangdianItem {
+          display: flex;
+          flex-direction: column;
+          margin-right: 50px;
+          .itemContent {
+            display: flex;
+            margin-bottom: 55px;
+            .itemIndex {
+              font-family: 'Impact';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 38px;
+              color: #FFFFFF;
+              width: 160px;
+              border-radius: 50%;
+              margin-right: 28px;
+              height: 47px;
+              line-height: 47px;
+              text-align: center;
+              background: #0E00FF;
+            }
+            .itemInfo {
+              font-family: 'Arial';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 22px;
+              line-height: 25px;
+              color: #FFFFFF;
+            }
+          }
         }
+        .liangdianBanner{
+          width: 565px;
+          height: 466px;
+          .liangdianImg {
+            width: 565px;
+            height: 466px;
+          }
+        }
+      }
+    }
+    .liangdianInfoItem {
+      color: #FFFFFF;
+      display: flex;
+      margin-top: 55px;
+      .itemIndex {
+        font-family: 'Impact';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        width: 100px;
+        border-radius: 50%;
+        margin-right: 28px;
+        height: 47px;
+        line-height: 47px;
+        text-align: center;
+        background: #0E00FF;
+      }
+      .liangdianInfoItemWord {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 25px;
       }
     }
   }
