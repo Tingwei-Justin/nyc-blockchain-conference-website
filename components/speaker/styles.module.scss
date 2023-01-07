@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+<<<<<<<< HEAD:components/speaker/styles.module.scss
 
 .speaker{
     width: 100%;
@@ -16,10 +18,29 @@
     }
     .allspeaker{
         width: 1421px;
+=======
+
+.sponsor{
+    width: 1516px;
+    height: 1080px;
+    margin: 0 auto;
+    position: relative;
+    .speakerBack{
+        position: absolute;
+        width: 1682px;
+        height: 808px;
+        top: -283px;
+        left: 50%;
+        transform:rotate(-16.55deg)  translate(-841px);
+    }
+    .allspeaker{
+        width: 1221px;
+>>>>>>> 733a19f47fc516bb74416c974adeb7372bddd912
         height: auto;
         display: flex;
         flex-wrap: wrap;
         color: white;
+<<<<<<< HEAD
         margin-left: 349px;
         padding-left: 0;
         padding-top: 70px;
@@ -30,11 +51,14 @@
         li:nth-child(8){
             margin-right: 0;
         }
+=======
+>>>>>>> 733a19f47fc516bb74416c974adeb7372bddd912
         .speakersLi{
             width: 201px;
             list-style: none;
             box-sizing: border-box;
             height: 262.31px;
+<<<<<<< HEAD
             margin-right:139px;
             margin-bottom: 103px;
             span{
@@ -54,6 +78,11 @@
                 font-style: normal;
                 font-weight: 500;
                 font-size: 15px;
+=======
+            span{
+                display: block;
+                width: 100%;
+>>>>>>> 733a19f47fc516bb74416c974adeb7372bddd912
             }
             .speakerImg{
                 width: 175.88px;
@@ -63,7 +92,11 @@
                 border-radius: 50%;
                 background-clip: padding-box, border-box;
                 background-origin: padding-box, border-box;
+<<<<<<< HEAD
                 background-image: linear-gradient( #000, #000), linear-gradient(360deg, #FF00C7, #0500FF 15%,#0500FF);
+=======
+                background-image: linear-gradient(to right, #000, #000), linear-gradient(90deg, #8F41E9, #578AEF);
+>>>>>>> 733a19f47fc516bb74416c974adeb7372bddd912
             }
         }
     }
@@ -74,7 +107,10 @@
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 900;
+<<<<<<< HEAD
         margin-left: 201px;
+=======
+>>>>>>> 733a19f47fc516bb74416c974adeb7372bddd912
         font-size: 70px;
         color: #0E00FF;
         
@@ -103,5 +139,43 @@
                 margin-left: 10px;
             }
         }
+<<<<<<< HEAD
+========
+.sponsorContent {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 84px;
+  .title {
+    font-family: 'Montserrat';
+    margin-left: 201px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    color: #0E00FF;
+  }
+  .sponsorWrap {
+    margin-top: 55px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .sponsorItem {
+      margin-right: 32px;
+      margin-bottom: 25px;
+      &:nth-child(7n) {
+        margin-right: 0;
+      }
+      &:last-child {
+        margin-right: auto;
+      }
+      .itemImg {
+        width: 244px;
+        height: 80px;
+      }
+>>>>>>>> 733a19f47fc516bb74416c974adeb7372bddd912:components/sponsor/styles.module.scss
     }
+  }
+=======
+    }
+>>>>>>> 733a19f47fc516bb74416c974adeb7372bddd912
 }
