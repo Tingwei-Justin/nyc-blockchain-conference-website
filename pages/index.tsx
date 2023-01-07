@@ -5,7 +5,7 @@ import Liangdian from '../components/liangdian'
 import Agenda from '../components/agenda'
 import Ticketing from '../components/ticketing'
 import Vote from '../components/vote'
-import Speaker from "../components/speaker";
+import Speaker from "@/components/speaker";
 import Sponsor from "../components/sponsor";
 
 const Home: NextPage = () => {

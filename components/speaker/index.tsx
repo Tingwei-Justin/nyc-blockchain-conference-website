@@ -2,8 +2,7 @@ import { FC } from "react";
 import styles from "./styles.module.scss"
 import Image from "next/image";
 import rightArrow from "@/public/rightAllow.png";
-import speaker from "@/public/test.jpg";
-import speakerBack from "@/public/SPEAKER_back.png";
+import speaker from "@/public/speaker.png";
 const ALLSPEAKERS=[
     {
         url:speaker,
@@ -43,24 +42,27 @@ const ALLSPEAKERS=[
 ]
 const Speaker: FC =({}) => {
     return(
-        <div className={styles.sponsor}>
-                <div className={styles.title}>SPEAKER
-                <div className={styles.Apply}>Apply
-                <Image src={rightArrow}  alt="rightArrow" className={styles.rightArrow}></Image>
-                </div>
-                </div>
-                <Image src={speakerBack} alt="speakerBack" className={styles.speakerBack}></Image>
-                <ul className={styles.allspeaker}>
-                    {
-                        ALLSPEAKERS.map((item,index)=>{
-                            return <li key={index} className={styles.speakersLi}>
-                                <Image src={item.url} alt={item.name+index} className={styles.speakerImg}></Image>
-                                <span>{item.name}</span>
-                                <p>{item.postion}</p>
-                            </li>
-                        })
-                    }
-                </ul>
+        <div className={styles.speaker}>
+          <div className={styles.head}>
+            <div className={styles.title}>
+              SPEAKER
+            </div>
+            <div className={styles.apply}>
+              APPLY
+              <Image src={rightArrow} className={styles.rightAllow} alt="right_allow"></Image>
+            </div>
+          </div>
+          <ul className={styles.allspeaker}>
+            {
+              ALLSPEAKERS.map((item,index)=>{
+                return <li key={index} className={styles.speakersLi}>
+                  <Image src={item.url} alt={item.name+index} className={styles.speakerImg}></Image>
+                  <span>{item.name}</span>
+                  <p>{item.postion}</p >
+                </li>
+              })
+            }
+          </ul>
         </div>
     )
 }
