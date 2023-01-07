@@ -20,7 +20,7 @@ const NAV_LIST = [
 export const NavBar: FC = ({}) => {
   return (
     <div className={styles.navBar}>
-      <Image src={logoLight} alt="logo" width={69} height={54} />
+      <Image src={logoLight} alt="logo"/>
       <ul className={styles.navUl}>
         {
           NAV_LIST.map((item, index) => {

@@ -1,0 +1,90 @@
+.agendaContent {
+  width: 1516px;
+  margin: 0 auto;
+  margin-top: 219px;
+  .title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 85px;
+    color: #0E00FF;
+  }
+  .agendaWrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 152px;
+    margin-top: 45px;
+    .nymInfoItem {
+      margin-bottom: 30px;
+      .nycInfo {
+        box-sizing: border-box;
+        width: 1108px;
+        height: 60px;
+        line-height: 60px;
+        background: linear-gradient(90deg, #0E00FF 19.77%, rgba(162, 89, 255, 0.22) 100%);
+        border: 1px solid #000000;
+        padding-left: 25px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        .infoTime {
+          font-family: 'Impact';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 30px;
+          color: #FFFFFF;
+        }
+        .infoTip {
+          font-family: 'Montserrat';
+          font-style: normal;
+          margin-left: 18px;
+          font-weight: 500;
+          font-size: 26px;
+          line-height: 32px;
+          color: #FFFFFF;
+        }
+      }
+      .nycImage{
+        width: 800px;
+        height: 300px;
+        margin-top: 19px;
+        .agenda2,.agenda1 {
+          width: 800px;
+          height: 300px;
+        }
+      }
+    }
+    .leftLine {
+      width: 0;
+      height: 755px;
+      position: absolute;
+      left: -30px;
+      top: -45px;
+      border: 1.5px dashed #3c33d3;
+      box-sizing: border-box;
+      .arc {
+        width: 20px;
+        height: 20px;
+        margin-top: 61px;
+        margin-left: -10px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 2px solid #3C33D3;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .arcTwo {
+        margin-top: 390px;
+      }
+      .arcContent {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #3C33D3;
+      }
+    }
+  }
+}

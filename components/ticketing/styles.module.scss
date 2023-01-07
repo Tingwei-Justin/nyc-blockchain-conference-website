@@ -1,0 +1,120 @@
+.ticketing {
+  width: 1516px;
+  margin: 0 auto;
+  margin-top: 82px;
+  .title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 85px;
+    color: #0E00FF;
+  }
+  .ticketWarp {
+    display: flex;
+    position: relative;
+    margin-left: 152px;
+    width: 100%;
+    margin-top: 45px;
+    flex-wrap: wrap;
+    .ticketItem {
+      display: flex;
+      width: 300px;
+      margin-right: 54px;
+      margin-bottom: 29px;
+      flex-direction: column;
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+      .itemHead{
+        width: 100%;
+        height: 52px;
+        line-height: 52px;
+        box-sizing: border-box;
+        background: #0E00FF;
+        padding-left: 26px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .headIcon {
+          width: 37px;
+          height: 29px;
+        }
+        .headTitle {
+          margin-left: 7px;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 900;
+          font-size: 20px;
+          line-height: 24px;
+          color: #FFFFFF;
+        }
+        .blackCircle {
+          background-color: black;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          left: -10px;
+          border-radius: 50%;
+          bottom: -10px;
+        }
+        .blackCircleTwo {
+          background-color: black;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          position: absolute;
+          right: -10px;
+          bottom: -10px;
+        }
+      }
+      .itemInfo {
+        display: flex;
+        width: 100%;
+        height: 266px;
+        box-sizing: border-box;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 29px 24px;
+        align-items: center;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        .total {
+          font-size: 36px;
+          color: #3C33D3;
+        }
+        .infoPart {
+          margin-top: 25px;
+        }
+        .infoPartTwo {
+          margin-top: 25px;
+        }
+      }
+      .itemFoot {
+        width: 100%;
+        height: 112px;
+        border-top: 1px dashed #8b8b8b;
+        background: #fff;
+        box-sizing: border-box;
+        padding: 15px 14px;
+        .footButton {
+          background: linear-gradient(90deg, #FF00C7 0%, #0500FF 104.67%, #0500FF 104.68%);
+          border-radius: 6px;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 900;
+          font-size: 16px;
+          line-height: 32px;
+          width: 272px;
+          height: 32px;
+          margin-bottom: 14px;
+          color: #FFFFFF;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

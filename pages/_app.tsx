@@ -20,6 +20,9 @@ const MyApp = (data: AppProps & ILayoutProps) => {
             margin: 0;
             padding: 0;
           }
+          div {
+            flex-shrink: 0;
+          }
         `}
       </style>
       <Head>
