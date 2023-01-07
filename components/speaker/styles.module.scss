@@ -1,31 +1,59 @@
 
-.sponsor{
-    width: 1516px;
+.speaker{
+    width: 100%;
     height: 1080px;
     margin: 0 auto;
     position: relative;
+    background-image: url(../../public/SPEAKER_back.png);  
+    background-position: 0 -50px;
     .speakerBack{
         position: absolute;
-        width: 1682px;
+        width: 1920px;
         height: 808px;
         top: -283px;
         left: 50%;
-        transform:rotate(-16.55deg)  translate(-841px);
+        transform: rotate(-17.55deg) translate(-6.38021rem);
     }
     .allspeaker{
-        width: 1221px;
+        width: 1421px;
         height: auto;
         display: flex;
         flex-wrap: wrap;
         color: white;
+        margin-left: 349px;
+        padding-left: 0;
+        padding-top: 70px;
+        text-align: center;
+        li:nth-child(4){
+            margin-right: 0;
+        }
+        li:nth-child(8){
+            margin-right: 0;
+        }
         .speakersLi{
             width: 201px;
             list-style: none;
             box-sizing: border-box;
             height: 262.31px;
+            margin-right:139px;
+            margin-bottom: 103px;
             span{
                 display: block;
                 width: 100%;
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                margin-top: 16px;
+                color: #3C33D3;
+            }
+            p{
+                margin-top: 4.72px;
+                margin-bottom: 0;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
             }
             .speakerImg{
                 width: 175.88px;
@@ -35,7 +63,7 @@
                 border-radius: 50%;
                 background-clip: padding-box, border-box;
                 background-origin: padding-box, border-box;
-                background-image: linear-gradient(to right, #000, #000), linear-gradient(90deg, #8F41E9, #578AEF);
+                background-image: linear-gradient( #000, #000), linear-gradient(360deg, #FF00C7, #0500FF 15%,#0500FF);
             }
         }
     }
@@ -46,6 +74,7 @@
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 900;
+        margin-left: 201px;
         font-size: 70px;
         color: #0E00FF;
         

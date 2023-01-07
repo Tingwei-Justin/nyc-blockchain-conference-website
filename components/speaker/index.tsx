@@ -2,8 +2,7 @@ import { FC } from "react";
 import styles from "./styles.module.scss"
 import Image from "next/image";
 import rightArrow from "@/public/rightAllow.png";
-import speaker from "@/public/test.jpg";
-import speakerBack from "@/public/SPEAKER_back.png";
+import speaker from "@/public/speaker.png";
 const ALLSPEAKERS=[
     {
         url:speaker,
@@ -41,15 +40,16 @@ const ALLSPEAKERS=[
         postion:"NYCfounder CEO"
     }
 ]
-const Sponsor: FC =({}) => {
+const Speaker: FC =({}) => {
     return(
-        <div className={styles.sponsor}>
-                <div className={styles.title}>SPEAKER
-                <div className={styles.Apply}>Apply
-                <Image src={rightArrow}  alt="rightArrow" className={styles.rightArrow}></Image>
+        <div className={styles.speaker}>
+                <div className={styles.title}>
+                    SPEAKER
+                    <div className={styles.Apply}>
+                        Apply
+                        <Image src={rightArrow}  alt="rightArrow" className={styles.rightArrow}></Image>
+                    </div>
                 </div>
-                </div>
-                <Image src={speakerBack} alt="speakerBack" className={styles.speakerBack}></Image>
                 <ul className={styles.allspeaker}>
                     {
                         ALLSPEAKERS.map((item,index)=>{
@@ -64,4 +64,4 @@ const Sponsor: FC =({}) => {
         </div>
     )
 }
-export default Sponsor;
+export default Speaker;
