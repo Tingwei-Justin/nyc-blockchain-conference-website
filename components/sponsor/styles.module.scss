@@ -2,13 +2,42 @@
   width: 100%;
   margin: 0 auto;
   margin-top: 84px;
-  .title {
-    font-family: 'Montserrat';
-    margin-left: 201px;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 70px;
-    color: #0E00FF;
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 328px;
+    .title {
+      font-family: 'Montserrat';
+      margin-left: 201px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 70px;
+      color: #0E00FF;
+    }
+    .apply {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      width: 220px;
+      height: 54px;
+      border-radius: 41px;
+      padding: 12px 0;
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 54px;
+      color: #FFFFFF;
+      .rightAllow {
+        margin-left: 15px;
+        width: 40px;
+        height: 36px;
+      }
+    }
   }
   .sponsorWrap {
     margin-top: 55px;
