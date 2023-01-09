@@ -22,6 +22,8 @@
         box-sizing: border-box;
         width: 1108px;
         height: 60px;
+        display: flex;
+        align-items: center;
         line-height: 60px;
         background: linear-gradient(90deg, #0E00FF 19.77%, rgba(162, 89, 255, 0.22) 100%);
         border: 1px solid #000000;
