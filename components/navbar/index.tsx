@@ -1,32 +1,44 @@
 import { FC } from 'react';
+import Link from 'next/link'
 import styles from "./styles.module.scss"
 import Image from 'next/image';
 import logoLight from "@/public/logo.png"
 
 const NAV_LIST = [
   {
-    title: 'speaker'
+    title: 'Speaker',
+    link: '/speaker',
   },{
-    title: 'Sponsors'
+    title: 'Sponsors',
+    link: '/sponsors',
   },{
-    title: 'Agenda'
+    title: 'Agenda',
+    link: '/',
   },{
-    title: 'Vote'
+    title: 'Vote',
+    link: '/',
   },{
-    title: 'Speaksers'
+    title: 'Speaksers',
+    link: '/',
   },
 ]
 
 export const NavBar: FC = ({}) => {
   return (
     <div className={styles.navBar}>
-      <Image src={logoLight} alt="logo"/>
+      <Link href="/">
+        <Image src={logoLight} alt="logo"/>
+      </Link>
       <ul className={styles.navUl}>
         {
           NAV_LIST.map((item, index) => {
-            return <li key={index} className={styles.navLi}>
-              {item.title}
-            </li>
+            return (
+              <Link href={item.link}>
+                <li key={index} className={styles.navLi}>
+                  {item.title}
+                </li>
+              </Link>
+            )
           })
         }
       </ul>

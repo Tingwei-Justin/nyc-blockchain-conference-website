@@ -1,13 +1,13 @@
 import { NextPage } from "next";
 import styles from "./index.module.scss";
-import Vote from '../../components/vote'
+import Agenda from '../../components/agenda'
 
-const Speaker: NextPage = () => {
+const Sponsors: NextPage = () => {
   return (
     <div className={styles.container}>
-      <Vote></Vote>
+      <Agenda></Agenda>
     </div>
   );
 };
 
-export default Speaker;
+export default Sponsors;
