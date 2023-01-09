@@ -105,7 +105,7 @@ const Vote: FC = ({}) => {
                   {item.name}
                 </div>
                 <div className={styles.total}>
-                  {item.total}
+                  total:{item.total}
                 </div>
                 <div className={styles.voteButton}>
                   REGISTER
