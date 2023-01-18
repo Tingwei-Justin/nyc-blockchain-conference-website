@@ -1,16 +1,17 @@
 import type { AppProps, AppContext } from "next/app";
 import App from "next/app";
-import { Layout, ILayoutProps } from "@/components/layout";
+import { Layout } from "@/components/layout";
 import code from "@/public/code.png";
-import Head from 'next/head';
+import Head from "next/head";
 import { useEffect } from "react";
 
-const MyApp = (data: AppProps & ILayoutProps) => {
-  const { Component, pageProps, navbarData, footerData } = data;
+const MyApp = (data: AppProps) => {
+  const { Component, pageProps } = data;
 
   useEffect(() => {
-    import("amfe-flexible")
-  }, [])
+    // @ts-ignore
+    import("amfe-flexible");
+  }, []);
 
   return (
     <div>
@@ -27,11 +28,12 @@ const MyApp = (data: AppProps & ILayoutProps) => {
       </style>
       <Head>
         <title>nyc-blockchain-conference-website</title>
-        <meta name='description' 
-          content='nyc-blockchain-conference-website'
-        />
+        <meta name="description" content="nyc-blockchain-conference-website" />
         <meta name="renderer" content="webkit" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+        ></meta>
       </Head>
       <Layout>
         <Component {...pageProps} />
