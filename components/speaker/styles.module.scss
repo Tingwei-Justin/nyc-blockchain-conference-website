@@ -1,8 +1,9 @@
 .speaker{
   width: 100%;
-  height: 1080px;
+  height: 100%;
   margin: 0 auto;
   position: relative;
+  margin-top: 80px;
   background-image: url(../../public/SPEAKER_back.png);
   background-size: 1920px 1080px;
   background-repeat: no-repeat;
@@ -81,17 +82,18 @@
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 24px;
         margin-top: 16px;
-        color: #3C33D3;
+        color: #ffffff;
       }
       p{
         margin-top: 4.72px;
         margin-bottom: 0;
         font-family: 'Montserrat';
         font-style: normal;
-        font-weight: 500;
+        font-weight: 300;
         font-size: 15px;
+        color: #d5d5d5;
       }
       .speakerImg{
         width: 175.88px;

@@ -13,7 +13,10 @@
   .ticketWarp {
     display: flex;
     position: relative;
-    margin-left: 152px;
+    // margin-left: 152px;
+      display: flex;
+        justify-content: center;
+        align-items: center;
     width: 100%;
     margin-top: 45px;
     flex-wrap: wrap;
@@ -88,9 +91,15 @@
         }
         .infoPart {
           margin-top: 25px;
+          font-size: large;
+          font-weight: 600;
         }
         .infoPartTwo {
           margin-top: 25px;
+          font-weight: 400;
+          opacity: 80%;
+          font-size: small;
+          text-align: center;
         }
       }
       .itemFoot {
