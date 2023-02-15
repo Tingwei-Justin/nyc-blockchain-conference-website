@@ -30,7 +30,7 @@ export const NavBar: FC = ({}) => {
   return (
     <div className={styles.navBar}>
       <Link href="/">
-        <div className="">
+        <div className={styles.logoContent}>
           <Image src={logoLight} alt="logo" />
         </div>
       </Link>

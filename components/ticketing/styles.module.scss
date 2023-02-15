@@ -1,5 +1,5 @@
 .ticketing {
-  width: 1516px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 82px;
   color: #ffffff;
@@ -13,7 +13,6 @@
   .ticketWarp {
     display: flex;
     position: relative;
-    // justify-content: start;
     width: 100%;
     margin-top: 45px;
     flex-wrap: wrap;
@@ -68,7 +67,7 @@
       .itemInfo {
         display: flex;
         width: 100%;
-        height: 266px;
+        min-height: 266px;
         box-sizing: border-box;
         flex-direction: column;
         background-color: #fff;
@@ -85,18 +84,16 @@
         }
         .infoPart {
           margin-top: 10px;
-          font-size: large;
           font-weight: 600;
         }
         .infoPartTwo {
           margin-top: 20px;
-          font-size: small;
           opacity: 60%;
         }
       }
       .itemFoot {
         width: 100%;
-        height: 112px;
+        min-height: 112px;
         border-top: 1px dashed #8b8b8b;
         background: #fff;
         box-sizing: border-box;
@@ -110,7 +107,7 @@
           font-size: 16px;
           line-height: 32px;
           width: 272px;
-          height: 32px;
+          min-height: 32px;
           margin-bottom: 14px;
           color: #FFFFFF;
           text-align: center;

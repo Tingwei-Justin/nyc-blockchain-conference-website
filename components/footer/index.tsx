@@ -14,10 +14,10 @@ export const Footer: FC = () => {
         <li>Mobile app</li>
         <li>Community</li>
         <li>Company</li>
+        <li>#BBSNYC</li>
         <li>Help desk</li>
         <li>Blog</li>
         <li>Resources</li>
-        <span>#BBSNYC</span>
       </ul>
       <div className={styles.footer_line}></div>
       <ul className={styles.footer_social}>

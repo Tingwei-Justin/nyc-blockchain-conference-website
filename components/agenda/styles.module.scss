@@ -1,5 +1,5 @@
 .agendaContent {
-  width: 1516px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 219px;
   color: #ffffff;
@@ -20,8 +20,6 @@
       margin-bottom: 30px;
       .nycInfo {
         box-sizing: border-box;
-        width: 1108px;
-        height: 60px;
         display: flex;
         align-items: center;
         line-height: 60px;
@@ -43,7 +41,6 @@
           margin-left: 18px;
           font-weight: 500;
           font-size: 26px;
-          line-height: 32px;
           color: #FFFFFF;
         }
       }

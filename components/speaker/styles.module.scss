@@ -57,28 +57,24 @@
     transform: rotate(-17.55deg) translate(-6.38021rem);
   }
   .allspeaker{
-    margin-left: 200px;
-    width: 1421px;
+    padding-left: 200px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
     color: white;
-    // margin-left: 349px;
-    padding-left: 0;
     padding-top: 70px;
     text-align: center;
-    li:nth-child(4){
-        margin-right: 0;
-    }
-    li:nth-child(8){
+    li:nth-child(3n){
         margin-right: 0;
     }
     .speakersLi{
       width: 201px;
       list-style: none;
       box-sizing: border-box;
-      height: 262.31px;
-      margin-right:139px;
+      min-height: 262.31px;
+      margin-right:119px;
       margin-bottom: 103px;
       span{
         display: block;

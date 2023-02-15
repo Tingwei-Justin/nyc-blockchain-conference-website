@@ -54,7 +54,6 @@ const Sponsor: FC = ({}) => {
           <Image
             className={styles.itemImg}
             alt="itemImg"
-            style={{ width: "300px", height: "207px" }}
             src={sponsors1}
           ></Image>
         </div>
@@ -62,7 +61,6 @@ const Sponsor: FC = ({}) => {
           <Image
             className={styles.itemImg}
             alt="itemImg"
-            style={{ width: "300px", height: "286px" }}
             src={sponsors2}
           ></Image>
         </div>
@@ -70,7 +68,6 @@ const Sponsor: FC = ({}) => {
           <Image
             className={styles.itemImg}
             alt="itemImg"
-            style={{ width: "300px", height: "272px" }}
             src={sponsors3}
           ></Image>
         </div>

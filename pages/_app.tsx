@@ -3,6 +3,7 @@ import { Layout } from "@/components/layout";
 import Head from "next/head";
 import { useEffect } from "react";
 import "../styles/globals.css";
+import "../styles/tailwind.css";
 
 const MyApp = (data: AppProps) => {
   const { Component, pageProps } = data;
@@ -31,10 +32,7 @@ const MyApp = (data: AppProps) => {
         <title>nyc-blockchain-conference-website</title>
         <meta name="description" content="nyc-blockchain-conference-website" />
         <meta name="renderer" content="webkit" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
-        ></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes"></meta>
       </Head>
       <Layout>
         <Component {...pageProps} />

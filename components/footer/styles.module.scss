@@ -1,51 +1,36 @@
 .footer {
-    padding: 155px 145px;
     background-color: black;
     box-sizing: border-box;
     width: 100%;
     .footer_nav{
       margin: auto;
-      width: 1520px;
-      height: 49px;
+      width: 100%;
+      min-height: 49px;
+      padding: 0;
+      padding-top: 10px;
       display: flex;
-      justify-content: center;
       background-color: black;
-      position: relative;
+      align-items: center;
       li{
         list-style: none;
         width: 173px;
         line-height: 49px;
         font-family: 'Montserrat';
-        letter-spacing: -0.015em;
         color: #FFFFFF;
         cursor: pointer;
         font-size: 15px;
         font-weight: 700;
-        letter-spacing: -0.015em;
         text-align: center;
-
+        margin-right: 15px;
+      }
+      li:last-child{
+        margin-right: 0;
       }
       li:nth-child(4){
-        margin-left: 406px;
-      }
-      span{
-        position: absolute;
-        left: 47%;
-        transform: translate(-72px);
-        // width: 154px;
-        height: 49px;
         font-family: 'Impact';
         font-style: normal;
         font-weight: 400;
         font-size: 40px;
-        line-height: 49px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        background: #FFFFFF;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        // text-fill-color: transparent;
       }
     }
     .footer_line{
@@ -64,6 +49,9 @@
       flex-direction: row;
       justify-content: center;
       li{
+        &::marker{
+          content: '';
+        }
         margin-right: 43px;
         img{
           width: 59px;
@@ -77,23 +65,15 @@
     .footer_tips{
       padding-top: 40px;
       display: block;
-      margin: auto;
-      width: 301px;
       height: 24px;
-      left: 810px;
-      top: 7483px;      
-
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
       line-height: 24px;
-      /* identical to box height, or 160% */
-
       text-align: center;
       letter-spacing: -0.015em;
-
-color: rgba(255, 255, 255, 0.8);
+      color: rgba(255, 255, 255, 0.8);
     }
     .topArea {
       display: flex;
