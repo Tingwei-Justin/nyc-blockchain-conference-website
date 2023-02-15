@@ -1,15 +1,13 @@
-import type { AppProps, AppContext } from "next/app";
-import App from "next/app";
+import { AppProps } from "next/app";
 import { Layout } from "@/components/layout";
-import code from "@/public/code.png";
 import Head from "next/head";
 import { useEffect } from "react";
+import "../styles/globals.css";
 
 const MyApp = (data: AppProps) => {
   const { Component, pageProps } = data;
 
   useEffect(() => {
-    // @ts-ignore
     import("amfe-flexible");
   }, []);
 
@@ -23,6 +21,9 @@ const MyApp = (data: AppProps) => {
           }
           div {
             flex-shrink: 0;
+          }
+          a {
+            text-decoration: none;
           }
         `}
       </style>

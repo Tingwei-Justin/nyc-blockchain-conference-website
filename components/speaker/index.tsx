@@ -3,6 +3,8 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 import rightArrow from "@/public/rightAllow.png";
 import speaker from "@/public/speaker.png";
+import Link from "next/link";
+
 const ALLSPEAKERS = [
   {
     url: speaker,
@@ -125,19 +127,19 @@ const ALLSPEAKERS = [
     postion: "CEO of New Huo Tech",
   },
 ];
-const Speaker: FC = ({}) => {
+const Speaker = () => {
   return (
     <div className={styles.speaker}>
       <div className={styles.head}>
         <div className={styles.title}>SPEAKER</div>
-        <div className={styles.apply}>
-          APPLY
+        {/* <div className={styles.apply}>
+          <Link href="/speaker">APPLY</Link>
           <Image
             src={rightArrow}
             className={styles.rightAllow}
             alt="right_allow"
           ></Image>
-        </div>
+        </div> */}
       </div>
       <ul className={styles.allspeaker}>
         {ALLSPEAKERS.map((item, index) => {
@@ -157,4 +159,5 @@ const Speaker: FC = ({}) => {
     </div>
   );
 };
+
 export default Speaker;

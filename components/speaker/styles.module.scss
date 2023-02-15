@@ -1,25 +1,25 @@
 .speaker{
   width: 100%;
-  height: 100%;
-  margin: 0 auto;
+  height: auto;
+  margin: 100px auto;
   position: relative;
-  margin-top: 80px;
   background-image: url(../../public/SPEAKER_back.png);
   background-size: 1920px 1080px;
   background-repeat: no-repeat;
   background-position: 0 -50px;
+  color: #ffffff;
   .head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 328px;
+    // margin-right: 328px;
     .title {
       font-family: 'Montserrat';
-      margin-left: 201px;
+      margin-left: 100px;
       font-style: normal;
       font-weight: 900;
       font-size: 70px;
-      color: #0E00FF;
+     
     }
     .apply {
       display: flex;
@@ -31,12 +31,15 @@
       border-radius: 41px;
       padding: 12px 0;
       box-sizing: border-box;
-      border: 1px solid #0E00FF;
       font-family: 'Arial';
       font-style: normal;
       font-weight: 400;
       font-size: 30px;
       line-height: 54px;
+      border: 4px solid transparent;
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      background-image: linear-gradient(to right, #000, #000), linear-gradient(90deg, #FF00C7, #0066FF);
       color: #FFFFFF;
       .rightAllow {
         margin-left: 15px;
@@ -54,12 +57,13 @@
     transform: rotate(-17.55deg) translate(-6.38021rem);
   }
   .allspeaker{
+    margin-left: 200px;
     width: 1421px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     color: white;
-    margin-left: 349px;
+    // margin-left: 349px;
     padding-left: 0;
     padding-top: 70px;
     text-align: center;
@@ -82,7 +86,7 @@
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 22px;
         margin-top: 16px;
         color: #ffffff;
       }
@@ -93,7 +97,7 @@
         font-style: normal;
         font-weight: 300;
         font-size: 15px;
-        color: #d5d5d5;
+        opacity: 60%;
       }
       .speakerImg{
         width: 175.88px;
@@ -103,7 +107,7 @@
         border-radius: 50%;
         background-clip: padding-box, border-box;
         background-origin: padding-box, border-box;
-        background-image: linear-gradient( #000, #000), linear-gradient(360deg, #FF00C7, #0500FF 15%,#0500FF);
+        background-image: linear-gradient( #000, #000), linear-gradient(360deg, #ff8902, #b15a03 15%,#b15a03);
       }
     }
   }

@@ -50,7 +50,7 @@ const Agenda: FC = ({}) => {
             </span>
           </div>
           <div className={styles.nycImage}>
-            <Image className={styles.agenda2} src={agenda2} alt="agenda2" />
+            <Image className={styles.agenda1} src={agenda1} alt="agenda1" />
           </div>
         </div>
       </div>

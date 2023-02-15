@@ -15,7 +15,7 @@ const TICKET_LIST = [
     title: "Guest Ticket",
     total: "$800",
     infoPart: "Early bird: $599",
-    infoPartTwo: "Two days of content, networking and experiences.",
+    infoPartTwo: "Two days of content, networking and experiences",
   },
   {
     title: "Student Pass",

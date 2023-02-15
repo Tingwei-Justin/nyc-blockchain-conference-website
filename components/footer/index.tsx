@@ -17,7 +17,7 @@ export const Footer: FC = () => {
         <li>Help desk</li>
         <li>Blog</li>
         <li>Resources</li>
-        <span>BBS.NYC</span>
+        <span>#BBSNYC</span>
       </ul>
       <div className={styles.footer_line}></div>
       <ul className={styles.footer_social}>

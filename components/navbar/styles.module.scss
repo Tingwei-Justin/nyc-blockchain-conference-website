@@ -6,10 +6,11 @@
   box-sizing: border-box;
   position: sticky;
   top: 0;
-  padding: 0 163px 0 254px;
+  padding: 10px 163px 10px 254px;
   left: 0;
   height: 70px;
-  background: linear-gradient(90.15deg, #BD00FF 2.49%, #0500FF 64.27%, #0500FF 104.68%);
+  background: #000000;
+  // background: linear-gradient(90.15deg, #BD00FF 2.49%, #0500FF 64.27%, #0500FF 104.68%);
   box-shadow: 0px 15px 10px rgba(2, 2, 2, 0.25);
   img{
     width: 69px;
@@ -39,7 +40,9 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background: linear-gradient(93.71deg, #FF00C7 -6.58%, #0047FF 104.41%);
+    // background: black;
+    border: solid white 2px;
+    // background: linear-gradient(93.71deg, #FF00C7 -6.58%, #0047FF 104.41%);
     border-radius: 38px;
     font-family: 'Montserrat';
     cursor: pointer;
