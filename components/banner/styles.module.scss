@@ -1,6 +1,6 @@
 .banner{
   width: 100%;
-  min-height: 800px;
+  min-height: 100vh;
   color:white;
   box-sizing: border-box;
   background: rgba(0, 0, 0, .75) url(../../public/ny-bg.jpg);
@@ -8,9 +8,13 @@
   // background: url(../../public/banner.png);
   background-size: 100% 100%;
   padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
   .bannerContent {
-    width: 100%;
-    margin: 0 auto;
+    // @apply max-w-7xl
+    max-width: 1440px;
+    // margin: 0 auto;
     background-size: 100% auto;
     padding-top: 70px;
     background-repeat: no-repeat;
@@ -48,7 +52,7 @@
     .meetingInfo {
       width: 100%;
       height: 147px;
-      margin-top: 40px;
+      margin-top: 100px;
       box-sizing: border-box;
       font-family: 'Montserrat';
       font-style: normal;

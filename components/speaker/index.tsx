@@ -6,123 +6,119 @@ import speaker from "@/public/speaker.png";
 import Link from "next/link";
 
 const ALLSPEAKERS = [
+  // {
+  //   url: speaker,
+  //   name: "George Soros",
+  //   postion: "Chair of Soros Fund Management LLC",
+  // },
   {
-    url: speaker,
-    name: "George Soros",
-    postion: "Chair of Soros Fund Management LLC",
-  },
-  {
-    url: speaker,
+    url: "/speakers/Roosevelt.png",
     name: "Roosevelt Skerrit",
     postion: "Prime Minister of Dominica",
   },
+  // {
+  //   url: speaker,
+  //   name: "Dickon Mitchell",
+  //   postion: "Prime Minister of Grenada",
+  // },
   {
-    url: speaker,
-    name: "Dickon Mitchell",
-    postion: "Prime Minister of Grenada",
-  },
-  {
-    url: speaker,
+    url: "/speakers/Philip.png",
     name: "Philip Pierre",
     postion: "Prime Minister of St.Lucia",
   },
   {
-    url: speaker,
+    url: "/speakers/Eric.png",
     name: "Eric Adams",
     postion: "Mayor of New York",
   },
   {
-    url: speaker,
-    name: "Vitalik Buterin",
-    postion: "Founder of ETH Foundation",
-  },
-  {
-    url: speaker,
-    name: "CZ",
-    postion: "Binance CEO",
-  },
-  {
-    url: speaker,
-    name: "Brian Armstrong",
-    postion: "CEO of Coinbase",
-  },
-  {
-    url: speaker,
-    name: "Justin Sun",
-    postion: "Founder of TRON",
-  },
-  {
-    url: speaker,
-    name: "Star Xu",
-    postion: "CEO of OKX",
-  },
-  {
-    url: speaker,
-    name: "Barry Silbert",
-    postion: "Founder of Grayscale",
-  },
-  {
-    url: speaker,
-    name: "Cathie Wood",
-    postion: "Founder of Ark Invest",
-  },
-  {
-    url: speaker,
-    name: "Ray Dalio",
-    postion: "Founder of Bridgewater Associates",
-  },
-  {
-    url: speaker,
-    name: "Wensheng Cai",
-    postion: "Chairman of Meitu",
-  },
-  {
-    url: speaker,
-    name: "Feng Xiao",
-    postion: "Wanxiang Blockchai",
-  },
-  {
-    url: speaker,
-    name: "Discus Fish",
-    postion: "Cobo Co-founder",
-  },
-  {
-    url: speaker,
+    url: "/speakers/JohnF.png",
     name: "John F. Manning",
     postion: "Harvard Law School",
   },
   {
-    url: speaker,
+    url: "/speakers/Erwin.png",
     name: "Erwin Chemerinsky",
     postion: "Dean of UC Berkeley School of Law",
   },
   {
-    url: speaker,
+    url: "/speakers/Gillian.png",
     name: "Gillian Lester",
     postion: "Dean of Columbia Law School",
   },
   {
-    url: speaker,
+    url: "/speakers/Vitalik.png",
+    name: "Vitalik Buterin",
+    postion: "Founder of ETH Foundation",
+  },
+  {
+    url: "/speakers/cz.png",
+    name: "CZ",
+    postion: "Binance CEO",
+  },
+  {
+    url: "/speakers/Brian.png",
+    name: "Brian Armstrong",
+    postion: "CEO of Coinbase",
+  },
+  {
+    url: "/speakers/JustinSun.png",
+    name: "Justin Sun",
+    postion: "Founder of TRON",
+  },
+  {
+    url: "/speakers/Star.png",
+    name: "Star Xu",
+    postion: "CEO of OKX",
+  },
+  {
+    url: "/speakers/barry.png",
+    name: "Barry Silbert",
+    postion: "Founder of Grayscale",
+  },
+  {
+    url: "/speakers/Cathie.png",
+    name: "Cathie Wood",
+    postion: "Founder of Ark Invest",
+  },
+  // {
+  //   url: "/speakers/Cathie.png",
+  //   name: "Ray Dalio",
+  //   postion: "Founder of Bridgewater Associates",
+  // },
+  {
+    url: "/speakers/Wensheng.png",
+    name: "Wensheng Cai",
+    postion: "Chairman of Meitu",
+  },
+  {
+    url: "/speakers/Feng.png",
+    name: "Feng Xiao",
+    postion: "Wanxiang Blockchai",
+  },
+  {
+    url: "/speakers/fish.png",
+    name: "Discus Fish",
+    postion: "Cobo Co-founder",
+  },
+
+  {
+    url: "/speakers/Chao.png",
     name: "CHAO MA",
     postion: "Chairman of Realord Group",
   },
   {
-    url: speaker,
+    url: "/speakers/JackKong.png",
     name: "JACK Kong",
     postion: "Founder of Nano Labs",
   },
   {
-    url: speaker,
+    url: "/speakers/JackYi.png",
     name: "Jack Yi",
     postion: "Founder of LD Capital",
   },
   {
-    url: speaker,
-    name: "Feng Wang",
-    postion: "Founder of Linekong",
-  },
-  {
-    url: speaker,
+    url: "/speakers/jundu.png",
     name: "Jun Du",
     postion: "CEO of New Huo Tech",
   },
@@ -149,6 +145,8 @@ const Speaker = () => {
                 src={item.url}
                 alt={item.name + index}
                 className={styles.speakerImg}
+                width={200}
+                height={200}
               ></Image>
               <span>{item.name}</span>
               <p>{item.postion}</p>

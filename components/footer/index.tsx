@@ -10,44 +10,46 @@ import styles from "./styles.module.scss";
 export const Footer: FC = () => {
   return (
     <div className={styles.footer}>
-      <ul className={styles.footer_nav}>
-        <li>Mobile app</li>
-        <li>Community</li>
-        <li>Company</li>
-        <li>#BBSNYC</li>
-        <li>Help desk</li>
-        <li>Blog</li>
-        <li>Resources</li>
-      </ul>
-      <div className={styles.footer_line}></div>
-      <ul className={styles.footer_social}>
-        <li>
-          <a href="">
-            <Image
-              src={footerSocial1}
-              alt="footer_social_1"
-              width={59}
-              height={59}
-            ></Image>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <Image src={footerSocial2} alt="footer_social_2"></Image>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <Image src={footerSocial3} alt="footer_social_3"></Image>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <Image src={footerSocial4} alt="footer_social_4"></Image>
-          </a>
-        </li>
-      </ul>
-      <span className={styles.footer_tips}>© BBS.NYC, Inc. 2023</span>
+      <div className={styles.footer_container}>
+        <ul className={styles.footer_nav}>
+          <li>Mobile app</li>
+          <li>Community</li>
+          <li>Company</li>
+          <li>#BBSNYC</li>
+          <li>Help desk</li>
+          <li>Blog</li>
+          <li>Resources</li>
+        </ul>
+        <div className={styles.footer_line}></div>
+        <ul className={styles.footer_social}>
+          <li>
+            <a href="">
+              <Image
+                src={footerSocial1}
+                alt="footer_social_1"
+                width={59}
+                height={59}
+              ></Image>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <Image src={footerSocial2} alt="footer_social_2"></Image>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <Image src={footerSocial3} alt="footer_social_3"></Image>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/BBSNYC2023">
+              <Image src={footerSocial4} alt="footer_social_4"></Image>
+            </a>
+          </li>
+        </ul>
+        <span className={styles.footer_tips}>© BBS.NYC, Inc. 2023</span>
+      </div>
     </div>
   );
 };

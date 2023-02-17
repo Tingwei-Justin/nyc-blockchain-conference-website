@@ -1,14 +1,15 @@
 .navBar {
   display: flex;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   z-index: 2;
   box-sizing: border-box;
   position: sticky;
   top: 0;
-  padding: 10px 163px 10px 254px;
+  padding: 20px 100px;
+  // padding: 10px 163px 10px 254px;
   left: 0;
-  min-height: 70px;
+  min-height: 80px;
   background: #000000;
   box-shadow: 0px 15px 10px rgba(2, 2, 2, 0.25);
   .logoContent {
@@ -40,7 +41,7 @@
   .ticketButton {
     min-width: 130px;
     height: 40px;
-    padding: 15px 30px;
+    padding: 10px 20px;
     line-height: 40px;
     text-align: center;
     border: solid white 2px;
@@ -48,8 +49,8 @@
     font-family: 'Montserrat';
     cursor: pointer;
     font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 24px;
     text-transform: uppercase;
     color: #FFFFFF;
   }

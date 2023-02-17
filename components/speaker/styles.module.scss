@@ -1,5 +1,5 @@
 .speaker{
-  width: 100%;
+  width: 1516px;
   height: auto;
   margin: 100px auto;
   position: relative;
@@ -15,7 +15,7 @@
     // margin-right: 328px;
     .title {
       font-family: 'Montserrat';
-      margin-left: 100px;
+      // margin-left: 100px;
       font-style: normal;
       font-weight: 900;
       font-size: 70px;
@@ -57,7 +57,7 @@
     transform: rotate(-17.55deg) translate(-6.38021rem);
   }
   .allspeaker{
-    padding-left: 200px;
+    // padding-left: 200px;
     width: 100%;
     height: auto;
     display: flex;
@@ -66,9 +66,10 @@
     color: white;
     padding-top: 70px;
     text-align: center;
-    li:nth-child(3n){
-        margin-right: 0;
-    }
+    justify-content: center;
+    // li:nth-child(3n){
+    //     margin-right: 0;
+    // }
     .speakersLi{
       width: 201px;
       list-style: none;

@@ -32,7 +32,10 @@ const MyApp = (data: AppProps) => {
         <title>nyc-blockchain-conference-website</title>
         <meta name="description" content="nyc-blockchain-conference-website" />
         <meta name="renderer" content="webkit" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes"
+        ></meta>
       </Head>
       <Layout>
         <Component {...pageProps} />

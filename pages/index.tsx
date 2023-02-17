@@ -20,7 +20,7 @@ const Home: NextPage = (props: any) => {
       <Ticketing></Ticketing>
       {/* <Vote></Vote> */}
       <Speaker></Speaker>
-      <Sponsor></Sponsor>
+      {/* <Sponsor></Sponsor> */}
     </div>
   );
 };
