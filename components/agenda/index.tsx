@@ -1,8 +1,9 @@
 import { FC } from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
-import agenda1 from "@/public/agenda1.jpg";
-import agenda2 from "@/public/agenda2.jpg";
+import agenda1 from "@/public/listener.jpg";
+import agenda2 from "@/public/speaker.jpg";
+import agenda3 from "@/public/ny-bg.jpg";
 
 const Agenda: FC = ({}) => {
   return (
@@ -50,7 +51,7 @@ const Agenda: FC = ({}) => {
             </span>
           </div>
           <div className={styles.nycImage}>
-            <Image className={styles.agenda1} src={agenda1} alt="agenda1" />
+            <Image className={styles.agenda2} src={agenda3} alt="agenda1" />
           </div>
         </div>
       </div>

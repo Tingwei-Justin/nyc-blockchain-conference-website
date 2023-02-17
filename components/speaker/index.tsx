@@ -127,7 +127,7 @@ const Speaker = () => {
   return (
     <div className={styles.speaker}>
       <div className={styles.head}>
-        <div className={styles.title}>SPEAKER</div>
+        <div className={styles.title}>SPEAKER (RSVP LIST)</div>
         {/* <div className={styles.apply}>
           <Link href="/speaker">APPLY</Link>
           <Image
