@@ -1,36 +1,53 @@
 .banner{
   width: 100%;
-  min-height: 100vh;
+  min-height: 1010px;
   color:white;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, .75) url(../../public/ny-bg.jpg);
-  background-blend-mode: darken;
-  // background: url(../../public/banner.png);
-  background-size: 100% 100%;
-  padding-top: 120px;
-  display: flex;
-  justify-content: center;
-  // align-items: center;
+  position: relative;
+  .bannerItemImage {
+    height: 1010px;
+    width: 100%;
+  }
+  .dots {
+    bottom: 150px;
+    li {
+      margin-right: 28px;
+      width: 20px!important;
+      height: 20px;
+      overflow: hidden;
+      border-radius: 50%;
+      button {
+        border-radius: 50%;
+        height: 20px;
+      }
+    }
+  }
   .bannerContent {
-    // @apply max-w-7xl
-    max-width: 1440px;
-    // margin: 0 auto;
+    position: absolute;
     background-size: 100% auto;
-    padding-top: 70px;
-    background-repeat: no-repeat;
+    top: 151px;
+    left: 268px;
     .title {
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 600;
-      font-size: 72px;
+      font-size: 100px;
+      width: 591px;
+      position: relative;
+      .nyc {
+        -webkit-text-stroke: 1px white; //文字描边
+        position: absolute;
+        color: transparent;
+        right: -10px;
+      }
     }
     .description{
-      width: 50%;
+      width: 52%;
       font-family: 'Montserrat';
       font-style: normal;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 24px;
-      opacity: 60%;
+      margin-top: 54px;
+      color: #d5d5d5;
     }
     .meetingCome {
       width: 1086px;
@@ -52,7 +69,7 @@
     .meetingInfo {
       width: 100%;
       height: 147px;
-      margin-top: 100px;
+      margin-top: 30px;
       box-sizing: border-box;
       font-family: 'Montserrat';
       font-style: normal;
@@ -74,6 +91,10 @@
             width: 35px;
             height: 35px;
           }
+        }
+        .date {
+          font-weight: bold;
+          color: rgba(253, 167, 0, 1);
         }
       }
     }

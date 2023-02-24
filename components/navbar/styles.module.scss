@@ -2,11 +2,11 @@
   display: flex;
   align-items: center;
   max-width: 100%;
-  z-index: 2;
+  z-index: 99;
   box-sizing: border-box;
   position: sticky;
   top: 0;
-  padding: 20px 100px;
+  padding: 0 256px;
   // padding: 10px 163px 10px 254px;
   left: 0;
   min-height: 80px;
@@ -16,15 +16,14 @@
     display: flex;
     img{
       width: 69px;
-      height: 54px;
+      height: 69px;
     }
   }
   .navUl {
-    float: left;
     padding: 0;
     margin: 0;
     list-style-type: none;
-    margin-left: 61px;
+    margin-left: 71px;
     flex: 1;
     .navLi {
       display: inline-block;
@@ -40,17 +39,14 @@
   }
   .ticketButton {
     min-width: 130px;
-    height: 40px;
-    padding: 10px 20px;
-    line-height: 40px;
+    padding: 10px 15px;
     text-align: center;
     border: solid white 2px;
-    border-radius: 38px;
     font-family: 'Montserrat';
     cursor: pointer;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     text-transform: uppercase;
     color: #FFFFFF;
   }

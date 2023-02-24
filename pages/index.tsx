@@ -1,6 +1,9 @@
 import { NextPage, GetServerSideProps } from "next";
 import styles from "./index.module.scss";
 import Banner from "../components/banner";
+import Bbs from "../components/bbs";
+import HighLight from "../components/highLight";
+import AgendaV2 from "../components/agendaV2";
 import Liangdian from "../components/liangdian";
 import Agenda from "../components/agenda";
 import Ticketing from "../components/ticketing";
@@ -14,6 +17,9 @@ const Home: NextPage = (props: any) => {
   return (
     <div className={styles.container}>
       <Banner></Banner>
+      <Bbs></Bbs>
+      <HighLight></HighLight>
+      <AgendaV2></AgendaV2>
       <Whatbbs></Whatbbs>
       <Liangdian></Liangdian>
       <Agenda></Agenda>

@@ -6,24 +6,24 @@ import logoLight from "@/public/bbsnyc.png";
 import ConnectBut from "@/components/connectBut";
 
 const NAV_LIST = [
-  // {
-  //   title: "Speaker",
-  //   link: "/speaker",
-  // },
-  // {
-  //   title: "Sponsors",
-  //   link: "/sponsors",
-  // },
-  // {
-  //   title: 'Agenda',
-  //   link: '/',
-  // },{
-  //   title: 'Vote',
-  //   link: '/',
-  // },{
-  //   title: 'Speaksers',
-  //   link: '/',
-  // },
+  {
+    title: "Speaker",
+    link: "/speaker",
+  },
+  {
+    title: "Sponsors",
+    link: "/sponsors",
+  },
+  {
+    title: 'Agenda',
+    link: '/',
+  },{
+    title: 'Vote',
+    link: '/',
+  },{
+    title: 'Speaksers',
+    link: '/',
+  },
 ];
 
 export const NavBar: FC = ({}) => {

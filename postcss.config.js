@@ -9,6 +9,5 @@ module.exports = {
       mediaQuery: false,
       minPixelValue: 0
     }
-
   }
 }
