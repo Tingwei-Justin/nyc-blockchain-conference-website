@@ -35,7 +35,7 @@ const Bbs: FC = () => {
           {
             bbsTypeList.map((item, index) => {
               return (
-                <div className={styles.typeItem}>
+                <div key={index} className={styles.typeItem}>
                   <Image src={item.icon} alt='' className={styles.typeItemIcon}></Image>
                   <span>{item.text}</span>
                 </div>
