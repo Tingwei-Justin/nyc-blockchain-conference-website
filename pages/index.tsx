@@ -4,13 +4,16 @@ import Banner from "../components/banner";
 import Bbs from "../components/bbs";
 import HighLight from "../components/highLight";
 import AgendaV2 from "../components/agendaV2";
-import Liangdian from "../components/liangdian";
-import Agenda from "../components/agenda";
-import Ticketing from "../components/ticketing";
+import TicketingV2 from "../components/ticketingV2";
+import VoteV2 from '../components/voteV2'
+// import Liangdian from "../components/liangdian";
+// import Agenda from "../components/agenda";
+// import Ticketing from "../components/ticketing";
 // import Vote from '../components/vote'
 import Speaker from "@/components/speaker";
-import Sponsor from "../components/sponsor";
-import Whatbbs from "../components/whatisbbsnyc";
+import SponsorTypes from '@/components/sponsorTypes'
+// import Sponsor from "../components/sponsor";
+// import Whatbbs from "../components/whatisbbsnyc";
 import { querySponsor } from "../utils/servers";
 
 const Home: NextPage = (props: any) => {
@@ -20,12 +23,15 @@ const Home: NextPage = (props: any) => {
       <Bbs></Bbs>
       <HighLight></HighLight>
       <AgendaV2></AgendaV2>
-      <Whatbbs></Whatbbs>
-      <Liangdian></Liangdian>
-      <Agenda></Agenda>
-      <Ticketing></Ticketing>
+      <TicketingV2></TicketingV2>
+      <VoteV2></VoteV2>
+      {/* <Whatbbs></Whatbbs> */}
+      {/* <Liangdian></Liangdian> */}
+      {/* <Agenda></Agenda> */}
+      {/* <Ticketing></Ticketing> */}
       {/* <Vote></Vote> */}
       <Speaker></Speaker>
+      <SponsorTypes></SponsorTypes>
       {/* <Sponsor></Sponsor> */}
     </div>
   );
