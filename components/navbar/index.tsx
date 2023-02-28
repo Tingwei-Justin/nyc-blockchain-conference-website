@@ -14,16 +14,16 @@ const NAV_LIST = [
     title: "Sponsors",
     link: "/sponsors",
   },
-  {
-    title: 'Agenda',
-    link: '/',
-  },{
-    title: 'Vote',
-    link: '/',
-  },{
-    title: 'Speaksers',
-    link: '/',
-  },
+  // {
+  //   title: 'Agenda',
+  //   link: '/',
+  // },{
+  //   title: 'Vote',
+  //   link: '/',
+  // },{
+  //   title: 'Speaksers',
+  //   link: '/',
+  // },
 ];
 
 export const NavBar: FC = ({}) => {

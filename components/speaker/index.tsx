@@ -47,6 +47,11 @@ const ALLSPEAKERS = [
     postion: "Dean of Columbia Law School",
   },
   {
+    url: "/speakers/Feng.png",
+    name: "Feng Xiao",
+    postion: "Wanxiang Blockchai",
+  },
+  {
     url: "/speakers/Vitalik.png",
     name: "Vitalik Buterin",
     postion: "Founder of ETH Foundation",
@@ -65,6 +70,11 @@ const ALLSPEAKERS = [
     url: "/speakers/JustinSun.png",
     name: "Justin Sun",
     postion: "Founder of TRON",
+  },
+  {
+    url: "/speakers/JackKong.png",
+    name: "JACK Kong",
+    postion: "Founder of Nano Labs",
   },
   {
     url: "/speakers/Star.png",
@@ -92,11 +102,6 @@ const ALLSPEAKERS = [
     postion: "Chairman of Meitu",
   },
   {
-    url: "/speakers/Feng.png",
-    name: "Feng Xiao",
-    postion: "Wanxiang Blockchai",
-  },
-  {
     url: "/speakers/fish.png",
     name: "Discus Fish",
     postion: "Cobo Co-founder",
@@ -106,11 +111,6 @@ const ALLSPEAKERS = [
     url: "/speakers/Chao.png",
     name: "CHAO MA",
     postion: "Chairman of Realord Group",
-  },
-  {
-    url: "/speakers/JackKong.png",
-    name: "JACK Kong",
-    postion: "Founder of Nano Labs",
   },
   {
     url: "/speakers/JackYi.png",
