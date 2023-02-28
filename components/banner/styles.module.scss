@@ -6,6 +6,7 @@
   .bannerItemImage {
     height: 1010px;
     width: 100%;
+    filter: brightness(60%);
   }
   .dots {
     bottom: 150px;
@@ -37,7 +38,7 @@
         -webkit-text-stroke: 1px white; //文字描边
         position: absolute;
         color: transparent;
-        right: -10px;
+        right: -40px;
       }
     }
     .description{

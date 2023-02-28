@@ -4,6 +4,7 @@ import Image from "next/image";
 import ticketing_icon_1 from "@/public/v2/ticketing_icon_1.png";
 import ticketing_icon_2 from "@/public/v2/ticketing_icon_2.png";
 import ticketing_icon_3 from "@/public/v2/ticketing_icon_3.png";
+import Link from "next/link";
 
 const ticketingList = [
   {
@@ -18,22 +19,22 @@ const ticketingList = [
   {
     icon: ticketing_icon_2,
     title: "Guest Ticket",
-    total: "$3,800",
-    price: "Early bird: $2,600",
+    total: "$800",
+    price: "Early bird: $599",
     button_top_text: "purchase pass",
     button_bottom_text: "purchase with crypto",
     info_text: "Two days of content, networking and experiences",
   },
-  {
-    icon: ticketing_icon_3,
-    title: "Student Pass",
-    total: "$3,800",
-    price: "Early bird: $2,600",
-    button_top_text: "purchase pass",
-    button_bottom_text: "purchase with crypto",
-    info_text:
-      "Complete the application form with a valid proof of enrollment. Approved students will receive a promotional link via email. Same benefits as the Guest Ticket.",
-  },
+  // {
+  //   icon: ticketing_icon_3,
+  //   title: "Student Pass",
+  //   total: "$3,800",
+  //   price: "Early bird: $2,600",
+  //   button_top_text: "purchase pass",
+  //   button_bottom_text: "purchase with crypto",
+  //   info_text:
+  //     "Complete the application form with a valid proof of enrollment. Approved students will receive a promotional link via email. Same benefits as the Guest Ticket.",
+  // },
 ];
 
 const TicketingV2: FC = ({}) => {
@@ -57,10 +58,18 @@ const TicketingV2: FC = ({}) => {
                 <div className={styles.title}>{item.title}</div>
                 <div className={styles.total}>{item.total}</div>
                 <div className={styles.price}>{item.price}</div>
-                <div className={styles.buttonTop}>{item.button_top_text}</div>
-                <div className={styles.buttonBottom}>
+                <Link
+                  target="_blank"
+                  href={
+                    "https://www.eventbrite.com/e/bit-block-summit-nyc-2023-tickets-516213768277"
+                  }
+                >
+                  <div className={styles.buttonTop}>{item.button_top_text}</div>
+                </Link>
+
+                {/* <div className={styles.buttonBottom}>
                   {item.button_bottom_text}
-                </div>
+                </div> */}
               </div>
               <div className={styles.ticketingInfo}>{item.info_text}</div>
             </div>

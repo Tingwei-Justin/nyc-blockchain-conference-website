@@ -45,10 +45,17 @@ export const NavBar: FC = ({}) => {
           );
         })}
       </ul>
-      <div className={styles.ticketButton}>
-        <ConnectBut />
-        TICKING
-      </div>
+      <Link
+        href={
+          "https://www.eventbrite.com/e/bit-block-summit-nyc-2023-tickets-516213768277"
+        }
+        target="_blank"
+      >
+        <div className={styles.ticketButton}>
+          {/* <ConnectBut /> */}
+          TICKETING
+        </div>
+      </Link>
     </div>
   );
 };
