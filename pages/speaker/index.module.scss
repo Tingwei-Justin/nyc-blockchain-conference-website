@@ -10,7 +10,7 @@
   width: 688px;
   margin: 0 auto;
   margin-top: 154px;
-  height: 1019px;
+  min-height: 1019px;
   position: relative;
 }
 .speakerTitle {
@@ -48,10 +48,9 @@
 }
 .formContent {
   width: 100%;
-  height: 970px;
+  min-height: 970px;
   box-sizing: border-box;
   padding: 16px 27px;
-  position: absolute;
   background: #FFFFFF;
   border-radius: 0px 0px 15px 15px;
   .companyName {
