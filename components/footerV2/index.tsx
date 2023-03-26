@@ -12,9 +12,25 @@ import paper from "@/public/v2/paper.png";
 import twitter from "@/public/v2/twitter.png";
 import wawa from "@/public/v2/wawa.png";
 import footer_bbs from "@/public/v2/footer_bbs.png";
+import Coat_of_arms_of_Dominic from "@/public/Strategic/Coat_of_arms_of_Dominic.png"
+import bbs_logo_2 from "@/public/Strategic/bbs_logo_2.png"
+import hashkey_logo from "@/public/Strategic/hashkey_logo.png"
+import payment_asia from "@/public/Strategic/payment_asia.png"
+import Huobi from "@/public/Strategic/Huobi.png"
+import tron_logo from "@/public/Strategic/tron_logo.png"
+import metaera_summit from "@/public/metaera_summit.png"
 
-const strategicImgList = [strategic_1, strategic_2, strategic_3];
-const submitImgList = [submit_binance, submit_im_token, submit_math];
+const strategicImgList = [
+  Coat_of_arms_of_Dominic,
+  bbs_logo_2,
+  hashkey_logo,
+  payment_asia,
+  Huobi,
+  tron_logo,
+];
+const submitImgList = [
+  metaera_summit
+];
 const footerIconTextList = [
   {
     icon: email,
@@ -54,6 +70,7 @@ export const FooterV2: FC = () => {
                 <Image
                   src={item}
                   alt=""
+                  objectFit='contain'
                   className={styles.strategicPartnersIcon}
                 ></Image>
               </div>

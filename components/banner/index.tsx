@@ -44,7 +44,7 @@ const Banner: FC = ({}) => {
           <Image className={styles.clockimg} src={clock} alt="logo" />
           <div className={styles.meetInfoContent}>
             <div className={styles.infoDate}>
-              Date : <span className={styles.date}>June 02-03</span> • NYC
+              Date : <span className={styles.date}>1st - 2nd June</span> • NYC
             </div>
           </div>
         </div>

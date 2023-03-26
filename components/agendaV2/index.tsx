@@ -12,17 +12,17 @@ const AgendaV2: FC = ({}) => {
           <div className={styles.topBarItem}>Topic</div>
         </div>
         <div className={styles.agendaInfoItem}>
-          <div className={styles.itemDate}>2023-06-02</div>
+          <div className={styles.itemDate}>2023-06-01 至 2023-06-02</div>
           {/* <div className={styles.itemName}>Gillian</div> */}
           <div className={styles.itemInfo}>2023 WEB Leaders Summit</div>
         </div>
         <div className={styles.agendaInfoItem}>
-          <div className={styles.itemDate}>2023-06-03</div>
+          <div className={styles.itemDate}>2023-06-01 至 2023-06-02</div>
           {/* <div className={styles.itemName}>Gillian</div> */}
           <div className={styles.itemInfo}>2023 Metaverse Citizens Summit</div>
         </div>
         <div className={styles.agendaInfoItem}>
-          <div className={styles.itemDate}>2023-06-03</div>
+          <div className={styles.itemDate}>2023-06-01 至 2023-06-02</div>
           {/* <div className={styles.itemName}>Gillian</div> */}
           <div className={styles.itemInfo}>
             Supervision, compliance, and consensus rebuild
