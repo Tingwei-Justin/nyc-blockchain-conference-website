@@ -34,7 +34,11 @@ const submitImgList = [
 const footerIconTextList = [
   {
     icon: email,
-    text: "info@bbs.nyc",
+    text: "Email: info@bbs.nyc",
+  },
+  {
+    icon: '',
+    text: 'Tel: +1 (212) 884-8760'
   },
   // {
   //   icon: paper,
@@ -47,8 +51,25 @@ const footerIconTextList = [
   // {
   //   icon: wawa,
   //   text: 'info@bbs.nyc'
-  // }
+  // },
+  {
+    icon: '',
+    text: '358 5th Avenue'
+  },
+  {
+    icon: '',
+    text: 'Suite 1402'
+  },
+  {
+    icon: '',
+    text: 'New York, NY 10001'
+  },
+  {
+    icon: '',
+    text: 'USA'
+  },
 ];
+
 const footerHelpList = [
   "Mobile app",
   "Community",
@@ -119,11 +140,11 @@ export const FooterV2: FC = () => {
           {footerIconTextList.map((item, index) => {
             return (
               <div key={index} className={styles.concatItem}>
-                <Image
+                {item.icon && <Image
                   src={item.icon}
                   alt=""
                   className={styles.concatIcon}
-                ></Image>
+                ></Image>}
                 {item.text}
               </div>
             );

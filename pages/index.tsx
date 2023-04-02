@@ -11,6 +11,8 @@ import VoteV2 from '../components/voteV2'
 // import Ticketing from "../components/ticketing";
 // import Vote from '../components/vote'
 import Speaker from "@/components/speaker";
+import ThinkTankPeople from "@/components/thinkTankPeople";
+import HonorarySecretary from "@/components/HonorarySecretary";
 import SponsorTypes from '@/components/sponsorTypes'
 // import Sponsor from "../components/sponsor";
 // import Whatbbs from "../components/whatisbbsnyc";
@@ -31,6 +33,8 @@ const Home: NextPage = (props: any) => {
       {/* <Ticketing></Ticketing> */}
       {/* <Vote></Vote> */}
       <Speaker></Speaker>
+      <ThinkTankPeople></ThinkTankPeople>
+      <HonorarySecretary></HonorarySecretary>
       <SponsorTypes></SponsorTypes>
       {/* <Sponsor></Sponsor> */}
     </div>

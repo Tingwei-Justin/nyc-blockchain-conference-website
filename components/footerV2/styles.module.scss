@@ -3,7 +3,7 @@
   padding-bottom: 148px;
   background: url(../../public/v2/footer_bg.png) no-repeat;
   background-size: 100% 904px;
-  background-position-y: 248px;
+  background-position-y: 100%;
 }
 .title {
   font-family: 'DengXian';
@@ -66,6 +66,7 @@
   .concat {
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     .concatItem {
       margin-right: 50px;
       display: flex;
