@@ -5,17 +5,17 @@ import Image from "next/image";
 const ALL_PEOPLES = [
   {
     url: "/thinkTankPeoples/Jianing_yu.jpg",
-    name: "",
+    name: "Jianing yu",
     postion: "",
   },
   {
     url: "/thinkTankPeoples/Yan_meng.jpg",
-    name: "",
+    name: "Yan meng",
     postion: "",
   },
   {
     url: "/thinkTankPeoples/Hui_han.png",
-    name: "",
+    name: "Hui han",
     postion: "",
   },
 ]
