@@ -12,7 +12,7 @@ import VoteV2 from '../components/voteV2'
 // import Vote from '../components/vote'
 import Speaker from "@/components/speaker";
 import ThinkTankPeople from "@/components/thinkTankPeople";
-import HonorarySecretary from "@/components/HonorarySecretary";
+import HonorarySecretary from "@/components/honorarySecretary";
 import SponsorTypes from '@/components/sponsorTypes'
 // import Sponsor from "../components/sponsor";
 // import Whatbbs from "../components/whatisbbsnyc";
