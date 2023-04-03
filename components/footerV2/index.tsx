@@ -52,22 +52,6 @@ const footerIconTextList = [
   //   icon: wawa,
   //   text: 'info@bbs.nyc'
   // },
-  {
-    icon: '',
-    text: '358 5th Avenue'
-  },
-  {
-    icon: '',
-    text: 'Suite 1402'
-  },
-  {
-    icon: '',
-    text: 'New York, NY 10001'
-  },
-  {
-    icon: '',
-    text: 'USA'
-  },
 ];
 
 const footerHelpList = [
@@ -149,6 +133,11 @@ export const FooterV2: FC = () => {
               </div>
             );
           })}
+        </div>
+        <div className={styles.footerAddress}>
+          <div>358 5th Avenue Suite 1402</div>
+          <div>New York, NY 10001</div>
+          <div>USA</div>
         </div>
       </div>
     </div>
