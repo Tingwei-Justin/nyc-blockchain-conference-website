@@ -14,8 +14,8 @@ const ALL_PEOPLES = [
     postion: "",
   },
   {
-    url: "/thinkTankPeoples/Hui_han.png",
-    name: "Hui han",
+    url: "/thinkTankPeoples/Feng_Han.jpg",
+    name: "Feng Han",
     postion: "",
   },
 ]

@@ -22,9 +22,19 @@ const ALLSPEAKERS = [
   //   postion: "Prime Minister of Grenada",
   // },
   {
-    url: "/speakers/Philip.png",
-    name: "Philip Pierre",
-    postion: "Prime Minister of St.Lucia",
+    url: "/speakers/allen_chastanet_2.png",
+    name: "Allen Chastanet",
+    postion: "Former Prime Minister of St Lucia",
+  },
+  {
+    url: "/speakers/Peter_David_02.jpg",
+    name: "Peter David",
+    postion: "Representative of Grenada",
+  },
+  {
+    url: "/speakers/Eddie_chong.png",
+    name: "Eddie Chong",
+    postion: "Founder of Dcoreum",
   },
   {
     url: "/speakers/Eric.png",

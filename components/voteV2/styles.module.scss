@@ -74,11 +74,16 @@
   .rightBbs {
     font-family: 'Arial';
     font-style: normal;
-    max-width: 470px;
+    max-width: 570px;
     font-weight: 400;
-    margin-bottom: 80px;
+    margin-bottom: 15px;
     font-size: 24px;
     color: #9E9E9E;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
   .rightVote {
     width: 180px;

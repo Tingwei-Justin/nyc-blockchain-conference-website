@@ -22,7 +22,7 @@
   display: flex;
 }
 .title {
-  margin-right: 140px;
+  margin-right: 60px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
@@ -33,6 +33,7 @@
   display: flex;
   flex: 1;
   flex-wrap: wrap;
+  justify-content: space-between;
   .itemIndex {
     position: absolute;
     top: 11px;
@@ -67,7 +68,7 @@
   }
   .highLightItemText {
     width: 395px;
-    height: 185px;
+    min-height: 185px;
     overflow: hidden;
     font-family: 'Arial';
     font-style: normal;
@@ -77,7 +78,7 @@
     color: #CCCCCC;
   }
   .highLightItemButton{
-    width: 395px;
+    width: 100%;
     min-height: 30px;
     background-color: rgba(163, 114, 41, 1);
     display: flex;
