@@ -32,11 +32,6 @@ const ALLSPEAKERS = [
     postion: "Representative of Grenada",
   },
   {
-    url: "/speakers/Star.png",
-    name: "Star Xu",
-    postion: "CEO of OKX",
-  },
-  {
     url: "/speakers/Eric.png",
     name: "Eric Adams",
     postion: "Mayor of New York",
