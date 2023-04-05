@@ -32,9 +32,9 @@ const ALLSPEAKERS = [
     postion: "Representative of Grenada",
   },
   {
-    url: "/speakers/Eddie_chong.png",
-    name: "Eddie Chong",
-    postion: "Founder of Dcoreum",
+    url: "/speakers/Star.png",
+    name: "Star Xu",
+    postion: "CEO of OKX",
   },
   {
     url: "/speakers/Eric.png",
@@ -87,9 +87,9 @@ const ALLSPEAKERS = [
     postion: "Founder of Nano Labs",
   },
   {
-    url: "/speakers/Star.png",
-    name: "Star Xu",
-    postion: "CEO of OKX",
+    url: "/speakers/Eddie_chong.png",
+    name: "Eddie Chong",
+    postion: "Founder of Dcoreum",
   },
   {
     url: "/speakers/barry.png",

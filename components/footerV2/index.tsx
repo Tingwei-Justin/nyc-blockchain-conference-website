@@ -19,7 +19,7 @@ import payment_asia from "@/public/Strategic/payment_asia.png"
 import Huobi from "@/public/Strategic/Huobi.png"
 import tron_logo from "@/public/Strategic/tron_logo.png"
 import MetrEra_LN from "@/public/Strategic/MetrEra_LN.png"
-import dcoreum from "@/public/Strategic/dcoreum.png"
+import dcoreum2 from "@/public/Strategic/dcoreum2.png"
 
 const strategicImgList = [
   Coat_of_arms_of_Dominic,
@@ -28,10 +28,10 @@ const strategicImgList = [
   payment_asia,
   Huobi,
   tron_logo,
+  dcoreum2
 ];
 const submitImgList = [
   MetrEra_LN,
-  dcoreum
 ];
 const footerIconTextList = [
   {
