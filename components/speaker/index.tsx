@@ -27,7 +27,7 @@ const ALLSPEAKERS = [
     postion: "Former Prime Minister of St Lucia",
   },
   {
-    url: "/speakers/Peter_David_02.jpg",
+    url: "/speakers/Peter_David_02.png",
     name: "Peter David",
     postion: "Representative of Grenada",
   },
@@ -83,7 +83,7 @@ const ALLSPEAKERS = [
   },
   {
     url: "/speakers/Eddie_chong.png",
-    name: "Eddie Chong",
+    name: "Dato Sri Eddie Chong",
     postion: "Founder of Dcoreum",
   },
   {

@@ -5,22 +5,22 @@ import Image from "next/image";
 const ALL_PEOPLES = [
   {
     url: "/honorarySecretary/rick.png",
-    name: "Rick",
+    name: "Rick C.",
     postion: "",
   },
   {
     url: "/honorarySecretary/Justin_z.jpg",
-    name: "Justin_z",
+    name: "Justin Z.",
     postion: "",
   },
   {
     url: "/honorarySecretary/Stephen_c.jpg",
-    name: "Stephen_c",
+    name: "Stephen C.",
     postion: "",
   },,
   {
     url: "/honorarySecretary/Tracy_z.png",
-    name: "Tracy_z",
+    name: "Tracy Z.",
     postion: "",
   },,
   {
@@ -40,7 +40,7 @@ const ALL_PEOPLES = [
   },,
   {
     url: "/honorarySecretary/Johnny.jpg",
-    name: "Johnny",
+    name: "Johnny L.",
     postion: "",
   },,
   {
