@@ -12,14 +12,14 @@ import paper from "@/public/v2/paper.png";
 import twitter from "@/public/v2/twitter.png";
 import wawa from "@/public/v2/wawa.png";
 import footer_bbs from "@/public/v2/footer_bbs.png";
-import Coat_of_arms_of_Dominic from "@/public/Strategic/Coat_of_arms_of_Dominic.png"
-import bbs_logo_2 from "@/public/Strategic/bbs_logo_2.png"
-import hashkey_logo from "@/public/Strategic/hashkey_logo.png"
-import payment_asia from "@/public/Strategic/payment_asia.png"
-import Huobi from "@/public/Strategic/Huobi.png"
-import tron_logo from "@/public/Strategic/tron_logo.png"
-import MetrEra_LN from "@/public/Strategic/MetrEra_LN.png"
-import dcoreum2 from "@/public/Strategic/dcoreum2.png"
+import Coat_of_arms_of_Dominic from "@/public/Strategic/Coat_of_arms_of_Dominic.png";
+import bbs_logo_2 from "@/public/Strategic/bbs_logo_2.png";
+import hashkey_logo from "@/public/Strategic/hashkey_logo.png";
+import payment_asia from "@/public/Strategic/payment_asia.png";
+import Huobi from "@/public/Strategic/Huobi.png";
+import tron_logo from "@/public/Strategic/tron_logo.png";
+import MetrEra_LN from "@/public/Strategic/MetrEra_LN.png";
+import dcoreum2 from "@/public/Strategic/dcoreum2.png";
 
 const strategicImgList = [
   Coat_of_arms_of_Dominic,
@@ -28,19 +28,17 @@ const strategicImgList = [
   payment_asia,
   Huobi,
   tron_logo,
-  dcoreum2
+  dcoreum2,
 ];
-const submitImgList = [
-  MetrEra_LN,
-];
+const submitImgList = [MetrEra_LN];
 const footerIconTextList = [
   {
     icon: email,
     text: "Email: info@bbs.nyc",
   },
   {
-    icon: '',
-    text: 'Tel: +1 (212) 884-8760'
+    icon: "",
+    text: "Tel: +1 (212) 884-8760",
   },
   // {
   //   icon: paper,
@@ -77,7 +75,7 @@ export const FooterV2: FC = () => {
                 <Image
                   src={item}
                   alt=""
-                  objectFit='contain'
+                  objectFit="contain"
                   className={styles.strategicPartnersIcon}
                 ></Image>
               </div>
@@ -111,7 +109,7 @@ export const FooterV2: FC = () => {
             <div className={styles.rightTop}>
               Retrospect | Regulate | Reshape | Rebuild
             </div>
-            <div className={styles.rightBottom}>
+            {/* <div className={styles.rightBottom}>
               {footerHelpList.map((item, index) => {
                 return (
                   <div key={index} className={styles.rightBottomTextItem}>
@@ -119,18 +117,20 @@ export const FooterV2: FC = () => {
                   </div>
                 );
               })}
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.concat}>
           {footerIconTextList.map((item, index) => {
             return (
               <div key={index} className={styles.concatItem}>
-                {item.icon && <Image
-                  src={item.icon}
-                  alt=""
-                  className={styles.concatIcon}
-                ></Image>}
+                {item.icon && (
+                  <Image
+                    src={item.icon}
+                    alt=""
+                    className={styles.concatIcon}
+                  ></Image>
+                )}
                 {item.text}
               </div>
             );

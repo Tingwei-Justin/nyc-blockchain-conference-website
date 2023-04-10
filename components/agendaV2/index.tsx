@@ -7,7 +7,7 @@ const AgendaV2: FC = ({}) => {
       <div className={styles.title}>Agenda</div>
       <div className={styles.content}>
         <div className={styles.contentTopBar}>
-          <div className={styles.topBarItem}>Time</div>
+          <div className={styles.topBarItem}>Date</div>
           {/* <div className={styles.topBarItem}>Speaker</div> */}
           <div className={styles.topBarItem}>Topic</div>
         </div>
