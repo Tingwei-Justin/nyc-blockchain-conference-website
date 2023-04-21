@@ -30,21 +30,23 @@ const Banner: FC = ({}) => {
       <div className={styles.bannerContent}>
         <div>
           <div className={styles.title}>
-            Bit Block Summit <span className={styles.nyc}>NYC</span>
+            Web3 & AI Summit
+            {/* <span className={styles.nyc}>NYC</span> */}
           </div>
           <div className={styles.description}>
-            BBS.NYC is the top summit in the blockchain field. It is
+            Exploring New Horizons: AI, Blockchain, and Web3 Transformations
+            {/* BBS.NYC is the top summit in the blockchain field. It is
             co-sponsored by top universities in the United States, governments
             of Caribbean countries, and well-known Wall Street investors! Every
             year, more than two theme events and more than 20 online forums are
-            held around the world.
+            held around the world. */}
           </div>
         </div>
         <div className={styles.meetingInfo}>
           <Image className={styles.clockimg} src={clock} alt="logo" />
           <div className={styles.meetInfoContent}>
             <div className={styles.infoDate}>
-              Date : <span className={styles.date}>1st - 2nd June</span> • NYC
+              Date : <span className={styles.date}>June 1</span> • NYC
             </div>
           </div>
         </div>
