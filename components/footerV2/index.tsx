@@ -40,8 +40,8 @@ const footerIconTextList = [
     text: "Email: info@bbs.nyc",
   },
   {
-    icon: '',
-    text: 'Tel: +1 (212) 884-8760'
+    icon: "",
+    text: "Tel: +1 (212) 884-8760",
   },
   // {
   //   icon: paper,
@@ -136,7 +136,7 @@ export const FooterV2: FC<categoryProps> = (props) => {
             <div className={styles.rightTop}>
               Retrospect | Regulate | Reshape | Rebuild
             </div>
-            <div className={styles.rightBottom}>
+            {/* <div className={styles.rightBottom}>
               {footerHelpList.map((item, index) => {
                 return (
                   <div key={index} className={styles.rightBottomTextItem}>
@@ -144,18 +144,20 @@ export const FooterV2: FC<categoryProps> = (props) => {
                   </div>
                 );
               })}
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.concat}>
           {footerIconTextList.map((item, index) => {
             return (
               <div key={index} className={styles.concatItem}>
-                {item.icon && <Image
-                  src={item.icon}
-                  alt=""
-                  className={styles.concatIcon}
-                ></Image>}
+                {item.icon && (
+                  <Image
+                    src={item.icon}
+                    alt=""
+                    className={styles.concatIcon}
+                  ></Image>
+                )}
                 {item.text}
               </div>
             );

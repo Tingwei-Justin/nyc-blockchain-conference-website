@@ -5,8 +5,18 @@ import { baseUrl } from "@/contants/apis";
 
 const ALL_PEOPLES = [
   {
+    url: "/honorarySecretary/Stephen_c.jpg",
+    name: "Stephen C.",
+    postion: "",
+  },
+  {
     url: "/honorarySecretary/rick.png",
     name: "Rick C.",
+    postion: "",
+  },
+  {
+    url: "/honorarySecretary/jennie.jpg",
+    name: "Jennie",
     postion: "",
   },
   {
@@ -14,36 +24,37 @@ const ALL_PEOPLES = [
     name: "Justin Z.",
     postion: "",
   },
-  {
-    url: "/honorarySecretary/Stephen_c.jpg",
-    name: "Stephen C.",
-    postion: "",
-  },,
+
+  ,
   {
     url: "/honorarySecretary/Tracy_z.png",
     name: "Tracy Z.",
     postion: "",
-  },,
+  },
+  ,
   {
     url: "/honorarySecretary/KK.jpg",
     name: "KK",
     postion: "",
-  },,
-  {
-    url: "/honorarySecretary/Allan.jpg",
-    name: "Allan",
-    postion: "",
-  },,
+  },
+  ,
+  // {
+  //   url: "/honorarySecretary/Allan.jpg",
+  //   name: "Allan",
+  //   postion: "",
+  // },,
   {
     url: "/honorarySecretary/Christina.jpg",
     name: "Christina",
     postion: "",
-  },,
+  },
+  ,
   {
     url: "/honorarySecretary/Johnny.jpg",
     name: "Johnny L.",
     postion: "",
-  },,
+  },
+  ,
   {
     url: "/honorarySecretary/Louis.png",
     name: "Louis",
