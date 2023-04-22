@@ -6,14 +6,14 @@ import logoLight from "@/public/bbsnyc.png";
 import ConnectBut from "@/components/connectBut";
 
 const NAV_LIST = [
-  {
-    title: "Speaker",
-    link: "/speaker",
-  },
-  {
-    title: "Sponsors",
-    link: "/sponsors",
-  },
+  // {
+  //   title: "Speaker",
+  //   link: "/speaker",
+  // },
+  // {
+  //   title: "Sponsors",
+  //   link: "/sponsors",
+  // },
   // {
   //   title: 'Agenda',
   //   link: '/',

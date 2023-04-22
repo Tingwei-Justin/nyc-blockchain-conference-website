@@ -1,6 +1,7 @@
 import { FC } from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
+import { baseUrl } from "@/contants/apis";
 
 const ALL_PEOPLES = [
   {
@@ -49,25 +50,36 @@ const ALL_PEOPLES = [
     postion: "",
   },
 ]
-const HonorarySecretary = () => {
+interface secretaryProps {
+  secretaryRes: Array<secretaryItem>
+}
+interface secretaryItem {
+  image: string
+  name: string
+  position?: string | ''
+}
+const HonorarySecretary: FC<secretaryProps> = (props) => {
+  const {
+    secretaryRes
+  } = props
   return (
     <div className={styles.speaker}>
       <div className={styles.head}>
         <div className={styles.title}>Honorary Secretary</div>
       </div>
       <ul className={styles.allspeaker}>
-        {ALL_PEOPLES.map((item, index) => {
+        {secretaryRes.map((item, index) => {
           return (
             <li key={index} className={styles.speakersLi}>
               <Image
-                src={item.url}
+                src={item.image.replace('.', baseUrl)}
                 alt={item.name + index}
                 className={styles.speakerImg}
                 width={200}
                 height={200}
               ></Image>
               <span>{item.name}</span>
-              <p>{item.postion}</p>
+              <p>{item.position}</p>
             </li>
           );
         })}

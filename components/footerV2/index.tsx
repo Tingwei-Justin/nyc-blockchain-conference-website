@@ -20,19 +20,20 @@ import Huobi from "@/public/Strategic/Huobi.png"
 import tron_logo from "@/public/Strategic/tron_logo.png"
 import MetrEra_LN from "@/public/Strategic/MetrEra_LN.png"
 import dcoreum2 from "@/public/Strategic/dcoreum2.png"
+import { baseUrl } from "@/contants/apis";
 
-const strategicImgList = [
-  Coat_of_arms_of_Dominic,
-  bbs_logo_2,
-  hashkey_logo,
-  payment_asia,
-  Huobi,
-  tron_logo,
-  dcoreum2
-];
-const submitImgList = [
-  MetrEra_LN,
-];
+// const strategicImgList = [
+//   Coat_of_arms_of_Dominic,
+//   bbs_logo_2,
+//   hashkey_logo,
+//   payment_asia,
+//   Huobi,
+//   tron_logo,
+//   dcoreum2
+// ];
+// const submitImgList = [
+//   MetrEra_LN,
+// ];
 const footerIconTextList = [
   {
     icon: email,
@@ -65,7 +66,27 @@ const footerHelpList = [
   "Resources",
 ];
 
-export const FooterV2: FC = () => {
+
+interface categoryProps {
+  categoryRes: Array<categoryItem>
+}
+interface categoryItem {
+  category: string
+  url: string
+}
+
+export const FooterV2: FC<categoryProps> = (props) => {
+  const {
+    categoryRes
+  } = props;
+
+  const strategicImgList = categoryRes.filter(item => {
+    return item.category === "strategic"
+  })
+
+  const submitImgList = categoryRes.filter(item => {
+    return item.category === "summit"
+  })
   return (
     <div className={styles.footerV2}>
       <div className={styles.strategicPartners}>
@@ -75,8 +96,10 @@ export const FooterV2: FC = () => {
             return (
               <div key={index}>
                 <Image
-                  src={item}
+                  src={item.url.replace('.', baseUrl)}
                   alt=""
+                  width={1250}
+                  height={500}
                   objectFit='contain'
                   className={styles.strategicPartnersIcon}
                 ></Image>
@@ -92,8 +115,10 @@ export const FooterV2: FC = () => {
             return (
               <div key={index}>
                 <Image
-                  src={item}
+                  src={item.url.replace('.', baseUrl)}
                   alt=""
+                  width={1250}
+                  height={500}
                   className={styles.summitPartnersIcon}
                 ></Image>
               </div>

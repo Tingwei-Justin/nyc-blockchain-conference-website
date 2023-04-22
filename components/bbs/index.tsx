@@ -23,7 +23,13 @@ const bbsTypeList = [
   },
 ]
 
-const Bbs: FC = () => {
+interface bbsRes {
+  bbsRes: bbsDetail
+}
+interface bbsDetail {
+  detail: string
+}
+const Bbs: FC<bbsRes> = (props) => {
   return (
     <div className={styles.bbsContent}>
       <div className={styles.bbsTitle}>
@@ -45,10 +51,7 @@ const Bbs: FC = () => {
         </div>
         <div className={styles.line}></div>
         <div className={styles.bbsInfo}>
-          BBS.NYC focuses on policy trends, technological innovation, and technological applications in
-          the blockchain field, provides practitioners with a world-class platform for political and
-          business exchanges, and contributes to the advancement of science and technology! BBS.NYC 
-          also pays attention to global climate change, multiculturalism, equality and freedom, love and peace!
+          {props.bbsRes.detail}
         </div>
       </div>
     </div>

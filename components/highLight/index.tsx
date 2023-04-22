@@ -5,6 +5,7 @@ import highLight_1 from '@/public/v2/highLight_1.png'
 import highLight_2 from '@/public/v2/highLight_2.png'
 import highLight_3 from '@/public/v2/highLight_3.png'
 import highLight_4 from '@/public/v2/highLight_4.png'
+import { baseUrl } from "@/contants/apis";
 
 const highLightList = [
   {
@@ -21,7 +22,18 @@ const highLightList = [
     text: 'Establish the largest industry summit brand in New York, and provide an effective communication platform for regulators, Wall Street, academia, technologists, entrepreneurs, and cryptocurrency enthusiasts',
   },
 ]
-const HighLight: FC = () => {
+interface highLightProps {
+  lightSpotRes: Array<highLightItem>
+}
+interface highLightItem {
+  detail: string
+  image: string
+  sort: number
+}
+const HighLight: FC<highLightProps> = (props) => {
+  const {
+    lightSpotRes
+  } = props
   return (
     <div className={styles.highLightContent}>
       <div className={styles.topInfo}>
@@ -34,15 +46,22 @@ const HighLight: FC = () => {
         </div>
         <div className={styles.highLightCardContent}>
           {
-            highLightList.map((item, index) => {
+            lightSpotRes.map((item, index) => {
               return (
                 <div className={styles.highLightItem} key={index}>
                   <div className={styles.itemIndex}>
                     { index + 1 >= 10 ? index : '0' + (index + 1) }
                   </div>
-                  <Image src={item.image} className={styles.itemImage} alt=''></Image>
+                  <Image
+                    src={item.image.replace('.', baseUrl)}
+                    className={styles.itemImage}
+                    width={800}
+                    height={400}
+                    alt=''
+                  >
+                  </Image>
                   <div className={styles.highLightItemText}>
-                    {item.text}
+                    {item.detail}
                   </div>
                   <div className={styles.highLightItemButton}>
                     read more →
