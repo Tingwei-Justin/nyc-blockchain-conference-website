@@ -13,8 +13,8 @@ import VoteV2 from "../components/voteV2";
 import Speaker from "@/components/speaker";
 import ThinkTankPeople from "@/components/thinkTankPeople";
 import HonorarySecretary from "@/components/honorarySecretary";
-import SponsorTypes from '@/components/sponsorTypes'
-import { FooterV2 } from '@/components/footerV2/index'
+import SponsorTypes from "@/components/sponsorTypes";
+import { FooterV2 } from "@/components/footerV2/index";
 // import Sponsor from "../components/sponsor";
 // import Whatbbs from "../components/whatisbbsnyc";
 import {
@@ -26,7 +26,7 @@ import {
   queryCategory,
   queryAdvisor,
   querySecretary,
-  queryGuest
+  queryGuest,
 } from "../utils/servers";
 
 const Home: NextPage = (props: any) => {
@@ -40,24 +40,15 @@ const Home: NextPage = (props: any) => {
       advisorRes,
       secretaryRes,
       guestRes,
-      categoryRes
-  }
-  } = props
+      categoryRes,
+    },
+  } = props;
   return (
     <div className={styles.container}>
-      <Banner
-        bannerList={bannerList.data}
-        bannerRes={bannerRes}
-      />
-      <Bbs
-        bbsRes={bbsRes.detail}
-      />
-      <HighLight
-        lightSpotRes={lightSpotRes.data}
-      />
-      <AgendaV2
-        agendaRes={agendaRes.data}
-      />
+      <Banner bannerList={bannerList.data} bannerRes={bannerRes} />
+      <Bbs bbsRes={bbsRes.detail} />
+      <HighLight lightSpotRes={lightSpotRes.data} />
+      <AgendaV2 agendaRes={agendaRes.data} />
       <TicketingV2></TicketingV2>
       {/* <VoteV2></VoteV2> */}
       {/* <Whatbbs></Whatbbs> */}
@@ -65,17 +56,11 @@ const Home: NextPage = (props: any) => {
       {/* <Agenda></Agenda> */}
       {/* <Ticketing></Ticketing> */}
       {/* <Vote></Vote> */}
-      <Speaker
-        guestRes={guestRes.data}
-      />
-      <ThinkTankPeople
-        advisorRes={advisorRes.data}
-      />
-      <HonorarySecretary
-        secretaryRes={secretaryRes.data}
-      />
+      <Speaker guestRes={guestRes.data} />
+      <ThinkTankPeople advisorRes={advisorRes.data} />
+      <HonorarySecretary secretaryRes={secretaryRes.data} />
       <SponsorTypes></SponsorTypes>
-      <FooterV2 categoryRes={categoryRes.data}/>
+      <FooterV2 categoryRes={categoryRes.data} />
       {/* <Sponsor></Sponsor> */}
     </div>
   );
@@ -85,44 +70,44 @@ export const getServerSideProps: GetServerSideProps = async () => {
   try {
     const bannerList = await queryBannerList({
       limit: 20,
-      page: 1
-    })
+      page: 1,
+    });
     const bannerRes = await queryOfficial({
-      type: '1'
-    })
+      type: "1",
+    });
     const bbsRes = await queryOfficial({
-      type: '2'
-    })
+      type: "2",
+    });
     const sponsorRes = await querySponsor({
       page: 1,
       limit: 10,
-    })
+    });
     const lightSpotRes = await queryLightSpot({
       page: 1,
       limit: 10,
-    })
+    });
     const agendaRes = await queryAgenda({
       page: 1,
       limit: 10,
-    })
+    });
     const categoryRes = await queryCategory({
       page: 1,
       limit: 10,
-      category: ''
-    })
+      category: "",
+    });
     const advisorRes = await queryAdvisor({
       page: 1,
       limit: 10,
-    })
+    });
     const secretaryRes = await querySecretary({
       page: 1,
       limit: 10,
-    })
+    });
     const guestRes = await queryGuest({
       page: 1,
       limit: 50,
-      type: 1
-    })
+      type: 1,
+    });
     return {
       props: {
         res: {
@@ -135,7 +120,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
           categoryRes,
           advisorRes,
           secretaryRes,
-          guestRes
+          guestRes,
         },
       },
     };
