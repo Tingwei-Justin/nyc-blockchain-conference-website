@@ -36,6 +36,31 @@ const ALLSPEAKERS = [
     name: "Eric Adams",
     postion: "Mayor of New York",
   },
+  // {
+  //   url: "/speakers/barry.png",
+  //   name: "Barry Silbert",
+  //   postion: "Founder of Grayscale",
+  // },
+  {
+    url: "/speakers/Cathie.png",
+    name: "Cathie Wood",
+    postion: "Founder of Ark Invest",
+  },
+  {
+    url: "/speakers/JustinSun.png",
+    name: "Justin Sun",
+    postion: "Founder of TRON",
+  },
+  {
+    url: "/speakers/Feng.png",
+    name: "Feng Xiao",
+    postion: "Wanxiang Blockchai",
+  },
+  {
+    url: "/speakers/JackKong.png",
+    name: "JACK Kong",
+    postion: "Founder of Nano Labs",
+  },
   {
     url: "/speakers/JohnF.png",
     name: "John F. Manning",
@@ -51,61 +76,39 @@ const ALLSPEAKERS = [
     name: "Gillian Lester",
     postion: "Dean of Columbia Law School",
   },
-  {
-    url: "/speakers/Feng.png",
-    name: "Feng Xiao",
-    postion: "Wanxiang Blockchai",
-  },
-  {
-    url: "/speakers/Vitalik.png",
-    name: "Vitalik Buterin",
-    postion: "Founder of ETH Foundation",
-  },
-  {
-    url: "/speakers/cz.png",
-    name: "CZ",
-    postion: "Binance CEO",
-  },
+
+  // {
+  //   url: "/speakers/Vitalik.png",
+  //   name: "Vitalik Buterin",
+  //   postion: "Founder of ETH Foundation",
+  // },
+  // {
+  //   url: "/speakers/cz.png",
+  //   name: "CZ",
+  //   postion: "Binance CEO",
+  // },
   {
     url: "/speakers/Brian.png",
     name: "Brian Armstrong",
     postion: "CEO of Coinbase",
   },
-  {
-    url: "/speakers/JustinSun.png",
-    name: "Justin Sun",
-    postion: "Founder of TRON",
-  },
-  {
-    url: "/speakers/JackKong.png",
-    name: "JACK Kong",
-    postion: "Founder of Nano Labs",
-  },
+
   {
     url: "/speakers/Eddie_chong.png",
     name: "Dato Sri Eddie Chong",
     postion: "Founder of Dcoreum",
   },
-  {
-    url: "/speakers/barry.png",
-    name: "Barry Silbert",
-    postion: "Founder of Grayscale",
-  },
-  {
-    url: "/speakers/Cathie.png",
-    name: "Cathie Wood",
-    postion: "Founder of Ark Invest",
-  },
+
   // {
   //   url: "/speakers/Cathie.png",
   //   name: "Ray Dalio",
   //   postion: "Founder of Bridgewater Associates",
   // },
-  {
-    url: "/speakers/Wensheng.png",
-    name: "Wensheng Cai",
-    postion: "Chairman of Meitu",
-  },
+  // {
+  //   url: "/speakers/Wensheng.png",
+  //   name: "Wensheng Cai",
+  //   postion: "Chairman of Meitu",
+  // },
   {
     url: "/speakers/fish.png",
     name: "Discus Fish",
@@ -122,11 +125,11 @@ const ALLSPEAKERS = [
     name: "Jack Yi",
     postion: "Founder of LD Capital",
   },
-  {
-    url: "/speakers/jundu.png",
-    name: "Jun Du",
-    postion: "CEO of New Huo Tech",
-  },
+  // {
+  //   url: "/speakers/jundu.png",
+  //   name: "Jun Du",
+  //   postion: "CEO of New Huo Tech",
+  // },
 ];
 const Speaker = () => {
   return (

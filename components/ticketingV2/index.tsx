@@ -14,16 +14,17 @@ const ticketingList = [
     price: "Early bird: $2,600",
     button_top_text: "purchase pass",
     button_bottom_text: "purchase with crypto",
-    info_text: "VIP zone + VIP badge + tea break in VIP lounge and much more",
+    info_text:
+      "VIP Private Networking + Site Visit + VIP zone + VIP badge + tea break in VIP lounge and much more",
   },
   {
     icon: ticketing_icon_2,
     title: "Guest Ticket",
-    total: "$800",
-    price: "Early bird: $599",
+    total: "$399",
+    price: "Early bird: $299",
     button_top_text: "purchase pass",
     button_bottom_text: "purchase with crypto",
-    info_text: "Two days of content, networking and experiences",
+    info_text: "1 day of content, networking and experiences",
   },
   // {
   //   icon: ticketing_icon_3,

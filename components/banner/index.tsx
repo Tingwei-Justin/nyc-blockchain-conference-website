@@ -29,12 +29,16 @@ const Banner: FC = ({}) => {
       </Carousel>
       <div className={styles.bannerContent}>
         <div>
+          <div className={styles.title}>Bit Block Summit</div>
           <div className={styles.title}>
-            Web3 & AI Summit
-            {/* <span className={styles.nyc}>NYC</span> */}
+            <span className={styles.nyc}>Blockchain & AI</span>
           </div>
           <div className={styles.description}>
-            Exploring New Horizons: AI, Blockchain, and Web3 Transformations
+            {/* Shaping the Future with Web3 and AI Innovations */}
+            {/* Exploring New Horizons: AI, Blockchain, and Web3 Transformations */}
+            <br />
+            Uniting Blockchain Technologies and AI for a Boundless Tomorrow
+            {/* Bridging Blockchain and AI for an Unbounded Future */}
             {/* BBS.NYC is the top summit in the blockchain field. It is
             co-sponsored by top universities in the United States, governments
             of Caribbean countries, and well-known Wall Street investors! Every
