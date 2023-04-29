@@ -55,8 +55,8 @@ const HighLight: FC<highLightProps> = (props) => {
                   <Image
                     src={item.image.replace('.', baseUrl)}
                     className={styles.itemImage}
-                    width={800}
-                    height={400}
+                    width={400}
+                    height={200}
                     alt=''
                   >
                   </Image>
