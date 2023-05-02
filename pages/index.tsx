@@ -80,28 +80,28 @@ export const getServerSideProps: GetServerSideProps = async () => {
     });
     const sponsorRes = await querySponsor({
       page: 1,
-      limit: 10,
+      limit: 20,
     });
     const lightSpotRes = await queryLightSpot({
       page: 1,
-      limit: 10,
+      limit: 20,
     });
     const agendaRes = await queryAgenda({
       page: 1,
-      limit: 10,
+      limit: 20,
     });
     const categoryRes = await queryCategory({
       page: 1,
-      limit: 10,
+      limit: 50,
       category: "",
     });
     const advisorRes = await queryAdvisor({
       page: 1,
-      limit: 10,
+      limit: 20,
     });
     const secretaryRes = await querySecretary({
       page: 1,
-      limit: 10,
+      limit: 20,
     });
     const guestRes = await queryGuest({
       page: 1,
