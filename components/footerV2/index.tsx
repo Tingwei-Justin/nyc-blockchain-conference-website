@@ -38,10 +38,14 @@ const footerIconTextList = [
   {
     icon: email,
     text: "Email: info@bbs.nyc",
+    href: "mailto:info@bbs.nyc",
+    target: "_blank",
   },
   {
     icon: "",
     text: "Tel: +1 (212) 884-8760",
+    href: "tel: +1 (212) 884-8760",
+    target: "_blank",
   },
   // {
   //   icon: paper,
@@ -50,6 +54,8 @@ const footerIconTextList = [
   {
     icon: twitter,
     text: "@BBSNYC2023",
+    href: "https://twitter.com/@BBSNYC2023",
+    target: "_blank",
   },
   // {
   //   icon: wawa,
@@ -108,7 +114,7 @@ export const FooterV2: FC<categoryProps> = (props) => {
           })}
         </div>
       </div>
-      <div className={styles.summitPartners}>
+      {/*<div className={styles.summitPartners}>
         <div className={styles.title}>Summit partners</div>
         <div className={styles.iconList}>
           {submitImgList.map((item, index) => {
@@ -125,7 +131,7 @@ export const FooterV2: FC<categoryProps> = (props) => {
             );
           })}
         </div>
-      </div>
+      </div>*/}
       <div className={styles.footerBottom}>
         <div className={styles.bbs}>
           <div className={styles.bbsLeft}>
@@ -151,14 +157,16 @@ export const FooterV2: FC<categoryProps> = (props) => {
           {footerIconTextList.map((item, index) => {
             return (
               <div key={index} className={styles.concatItem}>
-                {item.icon && (
-                  <Image
-                    src={item.icon}
-                    alt=""
-                    className={styles.concatIcon}
-                  ></Image>
-                )}
-                {item.text}
+                <a href={item.href} target={item.target} className={styles.aStyle}>
+                  {item.icon && (
+                      <Image
+                          src={item.icon}
+                          alt=""
+                          className={styles.concatIcon}
+                      ></Image>
+                  )}
+                  {item.text}
+                </a>
               </div>
             );
           })}
