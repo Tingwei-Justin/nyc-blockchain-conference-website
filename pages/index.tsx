@@ -59,7 +59,7 @@ const Home: NextPage = (props: any) => {
       <Speaker guestRes={guestRes.data} />
       <ThinkTankPeople advisorRes={advisorRes.data} />
       <HonorarySecretary secretaryRes={secretaryRes.data} />
-      <SponsorTypes></SponsorTypes>
+      {/* <SponsorTypes></SponsorTypes> */}
       <FooterV2 categoryRes={categoryRes.data} />
       {/* <Sponsor></Sponsor> */}
     </div>
