@@ -31,7 +31,6 @@ const NvaList = [
     },
 ];
 const HighLight = (props) => {
-    console.log(props)
     const {
         categoryRes = { data: []}
     } = props
