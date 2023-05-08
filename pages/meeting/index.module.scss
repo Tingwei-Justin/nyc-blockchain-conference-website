@@ -1,0 +1,114 @@
+.container {
+  background: url('../../public/SPEAKER_back.png');
+  background-size: 150% 100%;
+  background-position-x: -500px;
+  background-position-y: -200px;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.topDetail{
+  width: 1200px;
+  color:#fff;
+  font-size:22px;
+  margin:0 auto;
+  margin-top: 50px;
+  span{
+    font-weight: bold;
+  }
+}
+.formContainer {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  min-height: 1019px;
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+.detail{
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+.leftDetail{
+  width: 20%;
+  font-size: 18px;
+  color: #fff;
+}
+.leftFirst{
+  font-weight: bold;
+  margin:20px 20px 0;
+}
+.leftSecond{
+  margin:10px 20px 20px;
+}
+.rightDetail{
+  width: 80%;
+  background: #333333;
+  border-left: 2px solid #8b8b8b;
+}
+.timeDetail {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  .concatItem {
+    margin-right: 10px;
+    margin-left: 20px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    cursor: pointer;
+    color: #CCCCCC;
+  }
+  .concatIcon {
+    width: 20px;
+    height: 18px;
+    margin-right: 10px;
+  }
+}
+.meetingTitle{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 0 20px;
+  color: #fff;
+}
+.meetingAddress{
+  margin: 10px 0 0 20px;
+  font-size: 16px;
+  color: #CCCCCC;
+  display: flex;
+  align-items: center;
+  .concatIcon {
+    width: 20px;
+    height: 18px;
+    margin-right: 5px;
+  }
+}
+.speaker {
+  margin: 20px 0 0 20px;
+  color: #CCCCCC;
+  display: flex;
+  flex-wrap: wrap;
+  .speakerDetail {
+    display: flex;
+    font-size: 16px;
+    margin:0 20px 20px 0;
+    .speakerImage{
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+      border-radius: 50%;
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      //background-image: linear-gradient( #000, #000), linear-gradient(360deg, #ff8902, #b15a03 15%,#b15a03);
+    }
+    .speakerName{
+      margin:0 10px;
+    }
+  }
+}
+.meetingDetail{
+  margin: 10px 20px 50px 20px;
+  color: #CCCCCC;
+  font-size: 18px;
+}

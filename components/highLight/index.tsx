@@ -6,6 +6,7 @@ import highLight_2 from '@/public/v2/highLight_2.png'
 import highLight_3 from '@/public/v2/highLight_3.png'
 import highLight_4 from '@/public/v2/highLight_4.png'
 import { baseUrl } from "@/contants/apis";
+import Link from "next/link";
 
 const highLightList = [
   {
@@ -28,12 +29,18 @@ interface highLightProps {
 interface highLightItem {
   detail: string
   image: string
+  id: string
   sort: number
 }
 const HighLight: FC<highLightProps> = (props) => {
   const {
     lightSpotRes
   } = props
+
+  const handlerClickMore = () => {
+
+  }
+
   return (
     <div className={styles.highLightContent}>
       <div className={styles.topInfo}>
@@ -63,9 +70,11 @@ const HighLight: FC<highLightProps> = (props) => {
                   <div className={styles.highLightItemText}>
                     {item.detail}
                   </div>
-                  <div className={styles.highLightItemButton}>
-                    read more →
-                  </div>
+                  <Link href={`highLight?id=${item.id}`}>
+                    <div onClick={() => handlerClickMore()} className={styles.highLightItemButton}>
+                      read more →
+                    </div>
+                  </Link>
                 </div>
               )
             })

@@ -25,6 +25,7 @@
     list-style-type: none;
     margin-left: 71px;
     display: flex;
+    justify-content: flex-end;
     flex: 1;
     .navLi {
       margin-right: 67px;
@@ -36,6 +37,14 @@
       text-transform: capitalize;
       color: #FFFFFF;
     }
+  }
+  navUlOther{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-left: 50px;
+    display: flex;
+    flex: 1;
   }
   .ticketButton {
     min-width: 130px;

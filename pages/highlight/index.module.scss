@@ -1,0 +1,83 @@
+.container {
+  background: url('../../public/SPEAKER_back.png');
+  background-size: 150% 100%;
+  background-position-x: -500px;
+  background-position-y: -200px;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+.nav{
+  width: 880px;
+  color:#fff;
+  font-size:18px;
+  margin:0 auto;
+  margin-top: 50px;
+}
+.formContainer {
+  width: 880px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 130px;
+  //min-height: 1019px;
+  position: relative;
+  border:1px solid #fff;
+}
+.detail{
+  width: 680px;
+  margin: 40px auto;
+}
+.timeDetail{
+  font-size: 14px;
+  color:#fff
+}
+.titleDetail{
+  color:#fff;
+  line-height: normal;
+  box-sizing: inherit;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.textDetail{
+  margin-top: 20px;
+  color: #fff;
+}
+.Image{
+  width: 680px;
+  height: auto;
+}
+.highLightItemText{
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.bottomDetail{
+  margin-top: 30px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.bottomDetail {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  .concatItem {
+    margin-right: 20px;
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 24px;
+    align-items: center;
+    cursor: pointer;
+    color: #CCCCCC;
+  }
+  .concatIcon {
+    width: 30px;
+    height: 28px;
+    margin-right: 10px;
+  }
+}

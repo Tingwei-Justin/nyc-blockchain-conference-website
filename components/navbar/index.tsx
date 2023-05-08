@@ -4,6 +4,9 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 import logoLight from "@/public/bbsnyc.png";
 import ConnectBut from "@/components/connectBut";
+import email from "@/public/v2/email.png";
+import twitter from "@/public/v2/twitter.png";
+import {baseUrl} from "@/contants/apis";
 
 const NAV_LIST = [
   // {
@@ -25,6 +28,18 @@ const NAV_LIST = [
   //   link: '/',
   // },
 ];
+const ICON_LIST = [
+    {
+        icon: email,
+        href: "mailto:info@bbs.nyc",
+        target: "_blank",
+    },
+    {
+        icon: twitter,
+        href: "https://twitter.com/@BBSNYC2023",
+        target: "_blank",
+    }
+];
 
 export const NavBar: FC = ({}) => {
   return (
@@ -34,7 +49,7 @@ export const NavBar: FC = ({}) => {
           <Image src={logoLight} alt="logo" />
         </div>
       </Link>
-      <ul className={styles.navUl}>
+      {/*<ul className={styles.navUl}>
         {NAV_LIST.map((item, index) => {
           return (
             <Link href={item.link} key={index}>
@@ -44,7 +59,24 @@ export const NavBar: FC = ({}) => {
             </Link>
           );
         })}
-      </ul>
+      </ul>*/}
+        <ul className={styles.navUl}>
+            {ICON_LIST.map((item,index)=>{
+                return (
+                    <Link href={item.href} key={index}>
+                        <li className={styles.navLi} key={index}>
+                            {item.icon && (
+                                <Image
+                                    src={item.icon}
+                                    alt=""
+                                    // className={styles.concatIcon}
+                                ></Image>
+                            )}
+                        </li>
+                    </Link>
+                );
+            })}
+        </ul>
       <Link
         href={
           "https://www.eventbrite.com/e/bit-block-summit-nyc-2023-tickets-516213768277"

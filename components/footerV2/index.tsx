@@ -83,16 +83,16 @@ interface categoryItem {
 
 export const FooterV2: FC<categoryProps> = (props) => {
   const {
-    categoryRes
+    categoryRes = []
   } = props;
 
-  const strategicImgList = categoryRes.filter(item => {
+  const strategicImgList = categoryRes?.filter(item => {
     return item.category === "strategic"
-  })
+  }) || []
 
   const submitImgList = categoryRes.filter(item => {
     return item.category === "summit"
-  })
+  }) || []
   return (
     <div className={styles.footerV2}>
       <div className={styles.strategicPartners}>
