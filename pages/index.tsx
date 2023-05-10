@@ -1,4 +1,4 @@
-import { NextPage, GetServerSideProps } from "next";
+import { NextPage, GetServerSideProps, GetStaticProps } from "next";
 import styles from "./index.module.scss";
 import Banner from "../components/banner";
 import Bbs from "../components/bbs";
@@ -66,7 +66,7 @@ const Home: NextPage = (props: any) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export async function getStaticProps() {
   try {
     const bannerList = await queryBannerList({
       limit: 20,
@@ -123,6 +123,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
           guestRes,
         },
       },
+      revalidate: 60,
     };
   } catch (error) {
     return {
@@ -131,6 +132,73 @@ export const getServerSideProps: GetServerSideProps = async () => {
       },
     };
   }
-};
+}
+
+// export const getServerSideProps: GetServerSideProps = async () => {
+//   try {
+//     const bannerList = await queryBannerList({
+//       limit: 20,
+//       page: 1,
+//     });
+//     const bannerRes = await queryOfficial({
+//       type: "1",
+//     });
+//     const bbsRes = await queryOfficial({
+//       type: "2",
+//     });
+//     const sponsorRes = await querySponsor({
+//       page: 1,
+//       limit: 20,
+//     });
+//     const lightSpotRes = await queryLightSpot({
+//       page: 1,
+//       limit: 20,
+//     });
+//     const agendaRes = await queryAgenda({
+//       page: 1,
+//       limit: 20,
+//     });
+//     const categoryRes = await queryCategory({
+//       page: 1,
+//       limit: 50,
+//       category: "",
+//     });
+//     const advisorRes = await queryAdvisor({
+//       page: 1,
+//       limit: 20,
+//     });
+//     const secretaryRes = await querySecretary({
+//       page: 1,
+//       limit: 20,
+//     });
+//     const guestRes = await queryGuest({
+//       page: 1,
+//       limit: 50,
+//       type: 1,
+//     });
+//     return {
+//       props: {
+//         res: {
+//           bannerList,
+//           bannerRes,
+//           bbsRes,
+//           sponsorRes,
+//           lightSpotRes,
+//           agendaRes,
+//           categoryRes,
+//           advisorRes,
+//           secretaryRes,
+//           guestRes,
+//         },
+//       },
+//     };
+//   } catch (error) {
+//     return {
+//       props: {
+//         error,
+//       },
+//     };
+//   }
+// };
 
 export default Home;
