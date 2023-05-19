@@ -7,8 +7,8 @@ import logo from "@/public/logo.png";
 const TICKET_LIST = [
   {
     title: "VIP ticket",
-    total: "$3,800",
-    infoPart: "Early bird: $2,600",
+    total: "$2,800",
+    infoPart: "Early bird: $1,600",
     infoPartTwo: "VIP zone + VIP badge + tea break in VIP lounge and much more",
   },
   {
