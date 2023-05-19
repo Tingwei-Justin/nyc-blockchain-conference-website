@@ -47,7 +47,7 @@ const Banner: FC<detailProps> = (props) => {
           <div className={styles.title}>Bit Block Summit</div>
           <div className={styles.title}>
             {/* {detail.title} */}
-            <span className={styles.nyc}>Blockchain & AI</span>
+            <span className={styles.nyc}>AI + Web3.0</span>
           </div>
           <div className={styles.description}>{detail.detail}</div>
         </div>
