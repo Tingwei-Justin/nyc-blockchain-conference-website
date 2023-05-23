@@ -59,6 +59,9 @@ const Banner: FC<detailProps> = (props) => {
             </div>
           </div>
         </div>
+        <div className={styles.locationInfo}>
+          The Altman Building, 135 West 18th Street, New York, NY 10011
+        </div>
       </div>
     </div>
   );
