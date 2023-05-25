@@ -48,7 +48,7 @@ const Home: NextPage = (props: any) => {
       <Banner bannerList={bannerList.data} bannerRes={bannerRes} />
       <Bbs bbsRes={bbsRes.detail} />
       <HighLight lightSpotRes={lightSpotRes.data} />
-      <AgendaV2 agendaRes={agendaRes.data} />
+      {agendaRes.data.length > 0 && <AgendaV2 agendaRes={agendaRes.data} />}
       <TicketingV2></TicketingV2>
       {/* <VoteV2></VoteV2> */}
       {/* <Whatbbs></Whatbbs> */}
@@ -56,10 +56,10 @@ const Home: NextPage = (props: any) => {
       {/* <Agenda></Agenda> */}
       {/* <Ticketing></Ticketing> */}
       {/* <Vote></Vote> */}
-      <Speaker guestRes={guestRes.data} />
-      <ThinkTankPeople advisorRes={advisorRes.data} />
-      <HonorarySecretary secretaryRes={secretaryRes.data} />
-      {/* <SponsorTypes></SponsorTypes> */}
+      {guestRes.data.length > 0 && <Speaker guestRes={guestRes.data} />}
+      {advisorRes.data.length > 0 && <ThinkTankPeople advisorRes={advisorRes.data} />}
+      {secretaryRes.data.length > 0 && <HonorarySecretary secretaryRes={secretaryRes.data} />}
+      <SponsorTypes></SponsorTypes>
       <FooterV2 categoryRes={categoryRes.data} />
       {/* <Sponsor></Sponsor> */}
     </div>
