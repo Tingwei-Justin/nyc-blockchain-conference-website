@@ -19,30 +19,28 @@ const ALL_PEOPLES = [
     name: "Feng Han",
     postion: "",
   },
-]
+];
 interface advisorProps {
-  advisorRes: Array<advisorItem>
+  advisorRes: Array<advisorItem>;
 }
 interface advisorItem {
-  image: string
-  name: string
-  position?: string | ''
+  image: string;
+  name: string;
+  position?: string | "";
 }
 const ThinkTankPeoples: FC<advisorProps> = (props) => {
-  const {
-    advisorRes
-  } = props
+  const { advisorRes } = props;
   return (
     <div className={styles.speaker}>
-      <div className={styles.head}>
+      {/* <div className={styles.head}>
         <div className={styles.title}>Honorary Advisor</div>
-      </div>
+      </div> */}
       <ul className={styles.allspeaker}>
         {advisorRes.map((item, index) => {
           return (
             <li key={index} className={styles.speakersLi}>
               <Image
-                src={item.image.replace('.', baseUrl)}
+                src={item.image.replace(".", baseUrl)}
                 alt={item.name + index}
                 className={styles.speakerImg}
                 width={200}

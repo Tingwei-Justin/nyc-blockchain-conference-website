@@ -10,8 +10,8 @@ const ticketingList = [
   {
     icon: ticketing_icon_1,
     title: "VIP ticket",
-    total: "$3,800",
-    price: "Early bird: $2,600",
+    total: "$2,800",
+    price: "Early bird: $1,600",
     button_top_text: "purchase pass",
     button_bottom_text: "purchase with crypto",
     info_text:
@@ -20,8 +20,8 @@ const ticketingList = [
   {
     icon: ticketing_icon_2,
     title: "Guest Ticket",
-    total: "$399",
-    price: "Early bird: $299",
+    total: "$699",
+    price: "Early bird: $380",
     button_top_text: "purchase pass",
     button_bottom_text: "purchase with crypto",
     info_text: "1 day of content, networking and experiences",

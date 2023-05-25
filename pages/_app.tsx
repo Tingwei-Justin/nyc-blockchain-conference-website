@@ -31,7 +31,10 @@ const MyApp = (data: AppProps) => {
       <Head>
         <title>BBS.NYC | 2023</title>
         <link rel="shortcut icon" href="/v2/bbs_nyc_icon.png"></link>
-        <meta name="description" content="nyc-blockchain-conference-website" />
+        <meta
+          name="description"
+          content="BBS.NYC is the largest AI + Web3 Summit in NYC"
+        />
         <meta name="renderer" content="webkit" />
         <meta
           name="viewport"

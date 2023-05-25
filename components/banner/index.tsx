@@ -47,7 +47,7 @@ const Banner: FC<detailProps> = (props) => {
           <div className={styles.title}>Bit Block Summit</div>
           <div className={styles.title}>
             {/* {detail.title} */}
-            <span className={styles.nyc}>Blockchain & AI</span>
+            <span className={styles.nyc}>AI + Web3</span>
           </div>
           <div className={styles.description}>{detail.detail}</div>
         </div>
@@ -58,6 +58,9 @@ const Banner: FC<detailProps> = (props) => {
               Date : <span className={styles.date}>{detail.time}</span> • NYC
             </div>
           </div>
+        </div>
+        <div className={styles.locationInfo}>
+          The Altman Building, 135 West 18th Street, New York, NY 10011
         </div>
       </div>
     </div>

@@ -34,7 +34,7 @@ const Speaker: FC<sperkerProps> = (props) => {
   return (
     <div className={styles.speaker}>
       <div className={styles.head}>
-        <div className={styles.title}>SPEAKER (RSVP LIST)</div>
+        <div className={styles.title}>SPEAKERS</div>
       </div>
       <ul className={styles.allspeaker}>
         {speakers.map((item, index) => {
