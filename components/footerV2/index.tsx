@@ -96,7 +96,7 @@ export const FooterV2: FC<categoryProps> = (props) => {
       <div className={styles.strategicPartners}>
         <div className={styles.title}>Strategic Partners</div>
         <div className={styles.iconList}>
-          {strategicImgList.slice(0, 17).map((item, index) => {
+          {strategicImgList.slice(0, 19).map((item, index) => {
             return (
               <Image
                 key={index}
@@ -114,7 +114,7 @@ export const FooterV2: FC<categoryProps> = (props) => {
       <div className={styles.strategicPartners}>
         <div className={styles.title}>Affiliate Partners</div>
         <div className={styles.iconList}>
-          {strategicImgList.slice(17, 32).map((item, index) => {
+          {strategicImgList.slice(19, 32).map((item, index) => {
             return (
               <div key={index}>
                 <Image
