@@ -1,35 +1,40 @@
 .footerV2 {
-  padding: 100px 358px;
+  padding: 100px 200px;
   padding-bottom: 148px;
   background: url(../../public/v2/footer_bg.png) no-repeat;
   background-size: 100% 904px;
   background-position-y: 100%;
   background-color: black;
+  justify-content: center;
 }
 .title {
-  font-family: 'DengXian';
-  font-style: normal;
-  font-weight: 700;
-  margin-left: 31px;
-  font-size: 26px;
+  // color:white;
   color: rgba(187, 187, 187, 1);
   margin-bottom: 68px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
 }
 .iconList {
   display: flex;
   flex-wrap: wrap;
+  gap: 50px 100px;
   &::after{
     content: '';
     margin-left: auto;
   }
 }
 .strategicPartners {
-  margin-bottom: 91px;
+  margin-bottom: 160px;
   .strategicPartnersIcon {
-    width: 150px;
-    height: 60px;
-    margin-bottom: 10px;
-    margin-right: 62px;
+    width: 200px;
+    height: 80px;
+    // margin-bottom: 10px;
+    // margin-right: 62px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
   }
 }
 .summitPartners {

@@ -12,14 +12,14 @@ import paper from "@/public/v2/paper.png";
 import twitter from "@/public/v2/twitter.png";
 import wawa from "@/public/v2/wawa.png";
 import footer_bbs from "@/public/v2/footer_bbs.png";
-import Coat_of_arms_of_Dominic from "@/public/Strategic/Coat_of_arms_of_Dominic.png"
-import bbs_logo_2 from "@/public/Strategic/bbs_logo_2.png"
-import hashkey_logo from "@/public/Strategic/hashkey_logo.png"
-import payment_asia from "@/public/Strategic/payment_asia.png"
-import Huobi from "@/public/Strategic/Huobi.png"
-import tron_logo from "@/public/Strategic/tron_logo.png"
-import MetrEra_LN from "@/public/Strategic/MetrEra_LN.png"
-import dcoreum2 from "@/public/Strategic/dcoreum2.png"
+import Coat_of_arms_of_Dominic from "@/public/Strategic/Coat_of_arms_of_Dominic.png";
+import bbs_logo_2 from "@/public/Strategic/bbs_logo_2.png";
+import hashkey_logo from "@/public/Strategic/hashkey_logo.png";
+import payment_asia from "@/public/Strategic/payment_asia.png";
+import Huobi from "@/public/Strategic/Huobi.png";
+import tron_logo from "@/public/Strategic/tron_logo.png";
+import MetrEra_LN from "@/public/Strategic/MetrEra_LN.png";
+import dcoreum2 from "@/public/Strategic/dcoreum2.png";
 import { baseUrl } from "@/contants/apis";
 
 // const strategicImgList = [
@@ -72,41 +72,57 @@ const footerHelpList = [
   "Resources",
 ];
 
-
 interface categoryProps {
-  categoryRes: Array<categoryItem>
+  categoryRes: Array<categoryItem>;
 }
 interface categoryItem {
-  category: string
-  url: string
+  category: string;
+  url: string;
 }
 
 export const FooterV2: FC<categoryProps> = (props) => {
-  const {
-    categoryRes = []
-  } = props;
+  const { categoryRes = [] } = props;
+  const strategicImgList =
+    categoryRes?.filter((item) => {
+      return item.category === "strategic";
+    }) || [];
 
-  const strategicImgList = categoryRes?.filter(item => {
-    return item.category === "strategic"
-  }) || []
-
-  const submitImgList = categoryRes.filter(item => {
-    return item.category === "summit"
-  }) || []
+  const submitImgList =
+    categoryRes.filter((item) => {
+      return item.category === "summit";
+    }) || [];
   return (
     <div className={styles.footerV2}>
       <div className={styles.strategicPartners}>
-        <div className={styles.title}>Strategic partners</div>
+        <div className={styles.title}>Strategic Partners</div>
         <div className={styles.iconList}>
-          {strategicImgList.map((item, index) => {
+          {strategicImgList.slice(0, 17).map((item, index) => {
+            return (
+              <Image
+                key={index}
+                src={item.url.replace(".", baseUrl)}
+                alt=""
+                width={1250}
+                height={500}
+                className={styles.strategicPartnersIcon}
+              ></Image>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className={styles.strategicPartners}>
+        <div className={styles.title}>Affiliate Partners</div>
+        <div className={styles.iconList}>
+          {strategicImgList.slice(17, 32).map((item, index) => {
             return (
               <div key={index}>
                 <Image
-                  src={item.url.replace('.', baseUrl)}
+                  src={item.url.replace(".", baseUrl)}
                   alt=""
                   width={1250}
                   height={500}
-                  objectFit='contain'
+                  objectFit="contain"
                   className={styles.strategicPartnersIcon}
                 ></Image>
               </div>
@@ -114,14 +130,34 @@ export const FooterV2: FC<categoryProps> = (props) => {
           })}
         </div>
       </div>
-      {/*<div className={styles.summitPartners}>
-        <div className={styles.title}>Summit partners</div>
+
+      <div className={styles.strategicPartners}>
+        <div className={styles.title}>Community Partners</div>
+        <div className={styles.iconList}>
+          {strategicImgList.slice(32).map((item, index) => {
+            return (
+              <div key={index}>
+                <Image
+                  src={item.url.replace(".", baseUrl)}
+                  alt=""
+                  width={1250}
+                  height={500}
+                  objectFit="contain"
+                  className={styles.strategicPartnersIcon}
+                ></Image>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      {/* <div className={styles.summitPartners}>
+        <div className={styles.title}>Attending partners</div>
         <div className={styles.iconList}>
           {submitImgList.map((item, index) => {
             return (
               <div key={index}>
                 <Image
-                  src={item.url.replace('.', baseUrl)}
+                  src={item.url.replace(".", baseUrl)}
                   alt=""
                   width={1250}
                   height={500}
@@ -131,7 +167,27 @@ export const FooterV2: FC<categoryProps> = (props) => {
             );
           })}
         </div>
-      </div>*/}
+      </div> */}
+
+      {/* <div className={styles.summitPartners}>
+        <div className={styles.title}>Community partners</div>
+        <div className={styles.iconList}>
+          {submitImgList.map((item, index) => {
+            return (
+              <div key={index}>
+                <Image
+                  src={item.url.replace(".", baseUrl)}
+                  alt=""
+                  width={1250}
+                  height={500}
+                  className={styles.summitPartnersIcon}
+                ></Image>
+              </div>
+            );
+          })}
+        </div>
+      </div> */}
+
       <div className={styles.footerBottom}>
         <div className={styles.bbs}>
           <div className={styles.bbsLeft}>
@@ -157,13 +213,17 @@ export const FooterV2: FC<categoryProps> = (props) => {
           {footerIconTextList.map((item, index) => {
             return (
               <div key={index} className={styles.concatItem}>
-                <a href={item.href} target={item.target} className={styles.aStyle}>
+                <a
+                  href={item.href}
+                  target={item.target}
+                  className={styles.aStyle}
+                >
                   {item.icon && (
-                      <Image
-                          src={item.icon}
-                          alt=""
-                          className={styles.concatIcon}
-                      ></Image>
+                    <Image
+                      src={item.icon}
+                      alt=""
+                      className={styles.concatIcon}
+                    ></Image>
                   )}
                   {item.text}
                 </a>

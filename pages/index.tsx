@@ -57,8 +57,12 @@ const Home: NextPage = (props: any) => {
       {/* <Ticketing></Ticketing> */}
       {/* <Vote></Vote> */}
       {guestRes.data.length > 0 && <Speaker guestRes={guestRes.data} />}
-      {advisorRes.data.length > 0 && <ThinkTankPeople advisorRes={advisorRes.data} />}
-      {secretaryRes.data.length > 0 && <HonorarySecretary secretaryRes={secretaryRes.data} />}
+      {advisorRes.data.length > 0 && (
+        <ThinkTankPeople advisorRes={advisorRes.data} />
+      )}
+      {secretaryRes.data.length > 0 && (
+        <HonorarySecretary secretaryRes={secretaryRes.data} />
+      )}
       <SponsorTypes></SponsorTypes>
       <FooterV2 categoryRes={categoryRes.data} />
       {/* <Sponsor></Sponsor> */}
@@ -92,7 +96,7 @@ export async function getStaticProps() {
     });
     const categoryRes = await queryCategory({
       page: 1,
-      limit: 50,
+      limit: 100,
       category: "",
     });
     const advisorRes = await queryAdvisor({
@@ -105,7 +109,7 @@ export async function getStaticProps() {
     });
     const guestRes = await queryGuest({
       page: 1,
-      limit: 50,
+      limit: 100,
       type: 1,
     });
     return {
