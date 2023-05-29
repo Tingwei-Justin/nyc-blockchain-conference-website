@@ -28,6 +28,7 @@ import {
   querySecretary,
   queryGuest,
 } from "../utils/servers";
+import AgendaImage from "@/components/agendaImage";
 
 const Home: NextPage = (props: any) => {
   const {
@@ -47,9 +48,9 @@ const Home: NextPage = (props: any) => {
     <div className={styles.container}>
       <Banner bannerList={bannerList.data} bannerRes={bannerRes} />
       <Bbs bbsRes={bbsRes.detail} />
-      <HighLight lightSpotRes={lightSpotRes.data} />
+      {/* <HighLight lightSpotRes={lightSpotRes.data} /> */}
       {agendaRes.data.length > 0 && <AgendaV2 agendaRes={agendaRes.data} />}
-      <TicketingV2></TicketingV2>
+      <AgendaImage></AgendaImage>
       {/* <VoteV2></VoteV2> */}
       {/* <Whatbbs></Whatbbs> */}
       {/* <Liangdian></Liangdian> */}
@@ -57,13 +58,13 @@ const Home: NextPage = (props: any) => {
       {/* <Ticketing></Ticketing> */}
       {/* <Vote></Vote> */}
       {guestRes.data.length > 0 && <Speaker guestRes={guestRes.data} />}
+      <TicketingV2></TicketingV2>
       {advisorRes.data.length > 0 && (
         <ThinkTankPeople advisorRes={advisorRes.data} />
       )}
       {secretaryRes.data.length > 0 && (
         <HonorarySecretary secretaryRes={secretaryRes.data} />
       )}
-      <SponsorTypes></SponsorTypes>
       <FooterV2 categoryRes={categoryRes.data} />
       {/* <Sponsor></Sponsor> */}
     </div>
