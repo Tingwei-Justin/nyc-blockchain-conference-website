@@ -134,7 +134,7 @@ export const FooterV2: FC<categoryProps> = (props) => {
       <div className={styles.strategicPartners}>
         <div className={styles.title}>Community Partners</div>
         <div className={styles.iconList}>
-          {strategicImgList.slice(32).map((item, index) => {
+          {strategicImgList.slice(34).map((item, index) => {
             return (
               <div key={index}>
                 <Image
