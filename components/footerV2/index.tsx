@@ -96,7 +96,7 @@ export const FooterV2: FC<categoryProps> = (props) => {
       <div className={styles.strategicPartners}>
         <div className={styles.title}>Strategic Partners</div>
         <div className={styles.iconList}>
-          {strategicImgList.slice(0, 20).map((item, index) => {
+          {strategicImgList.slice(0, 21).map((item, index) => {
             return (
               <Image
                 key={index}
@@ -114,7 +114,7 @@ export const FooterV2: FC<categoryProps> = (props) => {
       <div className={styles.strategicPartners}>
         <div className={styles.title}>Affiliate Partners</div>
         <div className={styles.iconList}>
-          {strategicImgList.slice(20, 34).map((item, index) => {
+          {strategicImgList.slice(21, 35).map((item, index) => {
             return (
               <div key={index}>
                 <Image
@@ -134,7 +134,7 @@ export const FooterV2: FC<categoryProps> = (props) => {
       <div className={styles.strategicPartners}>
         <div className={styles.title}>Community Partners</div>
         <div className={styles.iconList}>
-          {strategicImgList.slice(34).map((item, index) => {
+          {strategicImgList.slice(35).map((item, index) => {
             return (
               <div key={index}>
                 <Image
